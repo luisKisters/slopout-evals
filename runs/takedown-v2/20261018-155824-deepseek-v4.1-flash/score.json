@@ -1,0 +1,168 @@
+{
+ "contestant": "deepseek-v4.1-flash",
+ "run": "20261018-155824-deepseek-v4.1-flash",
+ "working": true,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true
+ },
+ "parts": {
+  "feel": 4.8,
+  "takedown": 6.2,
+  "looks": 5.2,
+  "hud": 7.2,
+  "trailer": 5.8
+ },
+ "raw": 5.55,
+ "score": 5.5,
+ "judges": [
+  "gpt-6.1-sol-high",
+  "step-5-preview",
+  "opus-5.5-high",
+  "opus-5.5",
+  "muse-spark-1.3-contributor"
+ ],
+ "votes": {
+  "gpt-6.1-sol-high": {
+   "feel": 3,
+   "takedown": 6,
+   "looks": 4,
+   "hud": 7,
+   "trailer": 4,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road, boost flames, and speed lines.",
+    "Rival wall wreck and takedown counter are readable.",
+    "Bold speed display and changing boost bar."
+   ],
+   "bad": [
+    "Steering appears reversed; free play gets stuck against barriers.",
+    "Boxy cars and repeated pyramid mountains look crude.",
+    "The trailer spends much of its runtime showing CRASHED."
+   ],
+   "one_line": "The takedown has some punch, but fighting the steering and getting stuck at the wall kills the racing."
+  },
+  "step-5-preview": {
+   "feel": 6,
+   "takedown": 7,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Chase cam stays locked behind the car through genuine bends; drift angle and boost flames read clearly",
+    "TAKEDOWN! is punchy \u2014 rival wrecked on the tarmac, counter climbing, rival bar in HUD",
+    "Burnout-style HUD is complete and live: speed, boost bar, takedowns, crash/respawn text"
+   ],
+   "bad": [
+    "Steering check failed and the car spends half the drive pinned against barriers",
+    "World is empty low-poly pyramids \u2014 rival never shows up during actual play",
+    "Trailer is half CRASHED frames; the takedowns only exist in the agent's own footage"
+   ],
+   "one_line": "Great HUD and one real takedown, but you're kissing the wall half the time in a world of empty pyramids \u2014 polished tech demo, not a duel."
+  },
+  "opus-5.5-high": {
+   "feel": 4,
+   "takedown": 6,
+   "looks": 6,
+   "hud": 7,
+   "trailer": 6,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road with real bends, a sunset synthwave sky and striped barriers",
+    "Big italic speedo, segmented boost bar, takedown counter and rival bar",
+    "Trailer shows a readable TAKEDOWN! with the red rival wrecked at the wall"
+   ],
+   "bad": [
+    "In free play the car stays pinned against a wall at 1-4 mph for about 30 s",
+    "Drift and boost crash all the time, and CRASHED fills most of the trailer",
+    "The rival never appears in the scripted drive, and the steering direction is unclear"
+   ],
+   "one_line": "Nice sunset look and a good takedown screen, but you spend more time crashed or stuck on the wall than racing the rival."
+  },
+  "opus-5.5": {
+   "feel": 4,
+   "takedown": 4,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "The road winds, with clear bends, red-white barriers and skid marks",
+    "The HUD looks like Burnout: big speed number, segmented boost bar, takedown counter, rival bar, bold TAKEDOWN!/CRASHED text",
+    "The trailer shows real takedowns with the red rival wrecked at the wall and the counter going up"
+   ],
+   "bad": [
+    "In free play the car stays stuck on a wall at 1-4 mph from about 34 s to 62 s, and it shows CRASHED often",
+    "The rival never appears in the filmed drive, and takedowns stay at 0",
+    "The world is a low-poly synthwave template: pyramid mountains, boxy cars, the same red haze in every frame"
+   ],
+   "one_line": "The HUD and sunset vibe look the part and the trailer takedowns pop, but in my own run I mostly crashed or sat stuck on a wall and never saw the rival."
+  },
+  "muse-spark-1.3-contributor": {
+   "feel": 7,
+   "takedown": 8,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Sunset low-poly world with winding walled road and skidmarks",
+    "Big TAKEDOWN! / CRASHED HUD moments with boost flames",
+    "Burnout-style speed + boost + takedowns HUD that reacts"
+   ],
+   "bad": [
+    "Cars are blocky boxes with no detail",
+    "Scripted drive never shows rival takedown, only trailer does",
+    "Drift sparks but no real sideways slide visible"
+   ],
+   "one_line": "Looks like sunset Burnout with box cars but takedowns actually pop."
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "contestant": "step-5-preview",
+ "run": "20261014-213807-step-5-preview-resume",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": false
+ },
+ "parts": {
+  "feel": 3.0,
+  "takedown": 3.5,
+  "looks": 2.0,
+  "hud": 6.0,
+  "trailer": 4.0
+ },
+ "raw": 3.35,
+ "score": 3.0,
+ "judges": [
+  "gpt-6.1-sol-high",
+  "opus-5.5"
+ ],
+ "votes": {
+  "gpt-6.1-sol-high": {
+   "feel": 3,
+   "takedown": 3,
+   "looks": 2,
+   "hud": 6,
+   "trailer": 4,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "traffic_visible": true,
+   "good": [
+    "Boost raises speed and drains the bar.",
+    "Crashes show smoke, sparks, and quick recovery.",
+    "HUD shows speed, boost, and takedown count."
+   ],
+   "bad": [
+    "Steering appears reversed; turns repeatedly end at barriers.",
+    "Bare highway, box buildings, and sparse traffic give little speed sense.",
+    "Takedown count increases, but the rival impact and wreck are unclear."
+   ],
+   "one_line": "It runs, but the backward steering and empty box world make it feel far from Burnout."
+  },
+  "opus-5.5": {
+   "feel": 3,
+   "takedown": 4,
+   "looks": 2,
+   "hud": 6,
+   "trailer": 4,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "traffic_visible": true,
+   "good": [
+    "HUD has all Burnout parts: takedowns, boost bar that changes color, big speed number, rival distance",
+    "Boost works: speed goes to 169 mph with spark trails",
+    "Crash and respawn are fast, with a clear CRASHED text and smoke"
+   ],
+   "bad": [
+    "Steering is far too sharp: almost every A or D input sends the car into the wall and shows CRASHED",
+    "World is a flat grey plane with blue box buildings, cone trees and a flat purple sky with orange rays; traffic is almost absent",
+    "The takedown is hard to see: the TAKEDOWN! text is faint, and the rival is a red car that looks the same as the player car"
+   ],
+   "one_line": "It has a real Burnout-style HUD, but you crash into the wall every time you touch the steering, on an empty grey plane with almost no traffic."
+  }
+ }
+}

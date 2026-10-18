@@ -1,0 +1,16 @@
+{
+ "run": "20261018-155724-gpt-6.1-sol-high",
+ "task": "takedown-v2",
+ "contestant": "gpt-6.1-sol-high",
+ "harness": "codex",
+ "model": "gpt-6.1-sol",
+ "effort": "high",
+ "wall_min": 45,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v2",
+ "started": "2026-10-18T15:57:25Z",
+ "seconds": 1959,
+ "exit": "0",
+ "timed_out": false
+}

@@ -1,0 +1,14 @@
+{
+ "plan": "DeepSeek API",
+ "plan_usd_week": 0.0,
+ "weekly_pct": null,
+ "tokens": {
+  "input": 11092112,
+  "output": 53830
+ },
+ "note": "Pay per token: DeepSeek account balance before minus after the run.",
+ "provider_usd": 0.11,
+ "api_usd": 0.1,
+ "usd": 0.1,
+ "summary": "0.10 $ of DeepSeek API balance"
+}

@@ -1,0 +1,17 @@
+{
+ "run": "20261014-213807-step-5-preview-resume",
+ "contestant": "step-5-preview",
+ "harness": "opencode",
+ "model": "opencode-go/step-5-preview-free",
+ "effort": "",
+ "wall_min": 12,
+ "resumed_from": "/tmp/rescue3-step-5-preview",
+ "prior_min": 33,
+ "image": "slopout-box:v1",
+ "started": "2026-10-14T19:39:12Z",
+ "seconds": 516,
+ "exit": "0",
+ "timed_out": false,
+ "task": "takedown-v1",
+ "note": "Broken: A/D steering reversed. Fixed after the run in fixes/ (not scored)."
+}

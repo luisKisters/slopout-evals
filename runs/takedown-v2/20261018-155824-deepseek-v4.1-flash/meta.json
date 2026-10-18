@@ -1,0 +1,16 @@
+{
+ "run": "20261018-155824-deepseek-v4.1-flash",
+ "task": "takedown-v2",
+ "contestant": "deepseek-v4.1-flash",
+ "harness": "opencode",
+ "model": "deepseek/deepseek-flash",
+ "effort": "high",
+ "wall_min": 45,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v2",
+ "started": "2026-10-18T15:58:24Z",
+ "seconds": 1417,
+ "exit": "0",
+ "timed_out": false
+}

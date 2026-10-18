@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0a171c" />
+    <meta name="description" content="One road. One rival. No brakes. A high-speed arcade driving duel." />
+    <title>DEAD HEAT — Coastal Rival</title>
+    <script type="module" crossorigin src="/assets/index-iRuI4CEK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BkAHlSeE.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="vignette"></div>
+    <div id="impact-flash"></div>
+    <div id="speed-lines"></div>
+    <main id="hud" aria-label="Race dashboard">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">//</span><div><h1>DEAD HEAT<span>™</span></h1><p>ONE ROAD. ONE RIVAL.</p></div></div>
+        <div class="route"><span class="live-dot"></span> COASTAL RUN <span class="route-divider">/</span> <b>01</b><small>NO LIMITS. NO FINISH LINE.</small></div>
+        <div class="top-actions"><button id="sound" title="Toggle sound (M)" aria-label="Toggle sound">SOUND <span id="sound-state">OFF</span><svg viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4m12-2c3 2 3 6 0 8m3-11c5 4 5 10 0 14"/></svg></button><button id="restart" title="Restart duel (R)" aria-label="Restart duel">↻</button></div>
+      </header>
+      <section class="rival-info"><div class="eyebrow"><i></i> TARGET 01 <span>RIVAL</span></div><div class="rival-name">NIGHTFALL <span id="rival-distance">+ 24 M</span></div><div class="rival-health"><div id="rival-health-fill"></div></div><div class="rival-caption" id="rival-caption">PUT THEM INTO THE WALL.</div></section>
+      <div id="rival-marker"><span>RIVAL</span><b>⌄</b></div>
+      <section id="event" aria-live="polite"><div id="event-kicker">WALL IMPACT</div><div id="event-title">TAKEDOWN!</div><div id="event-detail">+1 &nbsp; / &nbsp; BOOST RECHARGED</div></section>
+      <div id="drift-feedback"><span class="drift-icon">↗</span><div><b id="drift-label">DRIFTING</b><small id="drift-score">+ BOOST</small></div></div>
+      <footer class="bottom-hud">
+        <section class="stats"><div class="stat-title">RIVAL TAKEDOWNS</div><div class="takedown-count"><span id="takedowns">00</span><span class="tally" id="tally">╱ ╱ ╱ ╱ ╱</span></div><div class="run-info"><span class="live-dot"></span><span id="run-distance">0.0 KM</span><span class="small-slash">/</span><span>FREE RUN</span></div></section>
+        <section class="boost-panel"><div class="boost-head"><span><b>⚡</b> BOOST</span><span id="boost-label">READY TO BURN</span></div><div class="boost-track"><div id="boost-fill"></div><div class="boost-segments"></div></div><div class="boost-foot"><span id="boost-percent">100%</span><span>HOLD <kbd>SPACE</kbd></span></div></section>
+        <section class="speed-panel"><div class="speed-overline"><span id="gear">GEAR 04</span><span class="speed-unit">KM/H</span></div><div class="speed-number" id="speed">180</div><div class="rpm-track"><div id="rpm-fill"></div></div><div class="speed-caption" id="speed-caption">MAKE CONTACT.</div></section>
+      </footer>
+      <div class="controls"><span><kbd>W</kbd><kbd>↑</kbd> GAS</span><span><kbd>S</kbd><kbd>↓</kbd> BRAKE / REVERSE</span><span><kbd>A</kbd><kbd>D</kbd> STEER</span><span><kbd>SHIFT</kbd> DRIFT</span><span><kbd>SPACE</kbd> BOOST</span><span class="controls-end"><kbd>R</kbd> RESTART</span></div>
+      <div class="edge-label">PACIFIC COAST HIGHWAY <span>•</span> AFTER HOURS</div>
+    </main>
+    <div id="touch-controls"><button data-key="a">◀</button><button data-key="d">▶</button><button data-key="Shift">DRIFT</button><button data-key=" ">BOOST</button><button data-key="w">GAS</button></div>
+  </body>
+</html>

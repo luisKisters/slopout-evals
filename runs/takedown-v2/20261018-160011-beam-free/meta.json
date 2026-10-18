@@ -1,0 +1,16 @@
+{
+ "run": "20261018-160011-beam-free",
+ "task": "takedown-v2",
+ "contestant": "beam-free",
+ "harness": "opencode",
+ "model": "opencode-go/beam-free",
+ "effort": "",
+ "wall_min": 45,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v2",
+ "started": "2026-10-18T16:00:11Z",
+ "seconds": 317,
+ "exit": "0",
+ "timed_out": false
+}

@@ -1,0 +1,196 @@
+{
+ "contestant": "beam-free",
+ "run": "20261018-160011-beam-free",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": false,
+  "leftRight": true
+ },
+ "parts": {
+  "feel": 3.33,
+  "takedown": 3.33,
+  "looks": 2.0,
+  "hud": 4.83,
+  "trailer": 3.5
+ },
+ "raw": 3.24,
+ "score": 3.0,
+ "judges": [
+  "gpt-6.1-sol-high",
+  "step-5-preview",
+  "opus-5.5-high",
+  "opus-5.5",
+  "deepseek-v4.1-flash",
+  "muse-spark-1.3-contributor"
+ ],
+ "votes": {
+  "gpt-6.1-sol-high": {
+   "feel": 3,
+   "takedown": 2,
+   "looks": 1,
+   "hud": 4,
+   "trailer": 3,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road with clear bends.",
+    "Steering responds and drifting changes car angle.",
+    "Speed, boost and takedown displays react."
+   ],
+   "bad": [
+    "Box cars on an empty green plane with flat lighting.",
+    "Takedown occurs while idle; no clear wall slam or rival wreck.",
+    "Repeated stops and crashes dominate play and the trailer."
+   ],
+   "one_line": "It looks like a rough driving prototype where I keep hitting invisible road edges instead of having a fast, brutal duel."
+  },
+  "step-5-preview": {
+   "feel": 4,
+   "takedown": 4,
+   "looks": 3,
+   "hud": 6,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "HUD reacts: boost bar, DRIFTING, TAKEDOWNS counter, takedown!/crashed pops",
+    "Road actually bends and the blue rival is present the whole duel",
+    "Crash debris plus fast respawn works"
+   ],
+   "bad": [
+    "Box cars on a flat grey-green plane with a gradient sky \u2014 no world, no textures, no lighting interest",
+    "Reverse is broken and a single steer key crashes the car, so speeds sit at 0 a lot",
+    "Trailer is mostly crashes and dead stops, not best moments"
+   ],
+   "one_line": "It loads, drifts and slams the rival with a real Burnout-style HUD, but it's box cars on an empty plane and you spend half the run crashed at 0 mph."
+  },
+  "opus-5.5-high": {
+   "feel": 3,
+   "takedown": 3,
+   "looks": 2,
+   "hud": 4,
+   "trailer": 3,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road with real hairpins and S-bends",
+    "Speed, boost bar, DRIFTING tag and takedown counter all on screen",
+    "Stable 60 fps, no console errors"
+   ],
+   "bad": [
+    "Car crashes on the road edge every few seconds, so most frames show 0 mph and 'crashed'",
+    "The only takedown happened while idle, when the rival hit the parked player; no wall slam and no visible wreck",
+    "Box cars on a flat green plane with a plain sky; the trailer is mostly crashes"
+   ],
+   "one_line": "The track has nice curves, but you spend more time reading 'crashed' than driving, and the one takedown happened while you sat still."
+  },
+  "opus-5.5": {
+   "feel": 3,
+   "takedown": 3,
+   "looks": 2,
+   "hud": 4,
+   "trailer": 3,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road with real S-bends and hairpins",
+    "Rival car exists and a takedown! popup and counter work",
+    "HUD shows speed, boost bar, takedown count and a drift tag"
+   ],
+   "bad": [
+    "The car crashes every few seconds when it touches the road edge, so it rarely holds speed",
+    "The first takedown happens at idle, with the rival hitting a stopped player, and there is no wall or real wreck",
+    "World is a flat green plane with blue sky and box cars, and the HUD text is tiny"
+   ],
+   "one_line": "It's a twisty road where you crash the moment you touch the grass, so it never feels fast, and the one takedown just happened to you while you stood still."
+  },
+  "deepseek-v4.1-flash": {
+   "feel": 3,
+   "takedown": 3,
+   "looks": 2,
+   "hud": 5,
+   "trailer": 2,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Genuine winding road with tight bends and a camera locked behind the car",
+    "Boost bar, speed, and takedown counter give a recognizable Burnout HUD shape",
+    "Solid 60fps and drifting/steering visibly change the view"
+   ],
+   "bad": [
+    "Car is nearly always 'crashed' or at 0 mph - twitchy crash loop kills any speed or flow",
+    "No walls, scenery, or world detail: black road on a flat green plane with brick-like cars",
+    "Takedown fires while idle (rival crashes itself) and trailer is mostly crash frames, not best moments"
+   ],
+   "one_line": "The road curves and the HUD is sort of Burnout, but you spend the whole time spun out on an empty green plane, and the takedowns happen by themselves."
+  },
+  "muse-spark-1.3-contributor": {
+   "feel": 4,
+   "takedown": 5,
+   "looks": 2,
+   "hud": 6,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "takedown! text + counter works",
+    "winding road with real bends",
+    "chase cam holds, drift label + speeds react"
+   ],
+   "bad": [
+    "box cars on flat empty green plane",
+    "crashes in almost every frame",
+    "no reverse, idle auto-takedown"
+   ],
+   "one_line": "Boxy duel with working takedowns but you spend more time crashed on grass than racing."
+  }
+ }
+}

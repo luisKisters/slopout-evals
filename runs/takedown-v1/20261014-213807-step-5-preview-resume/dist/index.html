@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BURNOUT 3 STYLE — TAKEDOWN</title>
+    <style>
+      :root {
+        --orange: #ff8c1a;
+        --hot: #ff3b1f;
+        --ink: #05070c;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 100%; height: 100%; overflow: hidden; background: var(--ink); }
+      body { font-family: "Arial Black", "Arial Narrow Bold", Impact, system-ui, sans-serif; color: #fff; }
+      #app { position: fixed; inset: 0; }
+      canvas { display: block; width: 100%; height: 100%; }
+
+      /* ---------- HUD ---------- */
+      #hud { position: fixed; inset: 0; pointer-events: none; z-index: 10; }
+      #speedlines {
+        position: absolute; inset: 0; opacity: 0;
+        background: radial-gradient(ellipse 60% 55% at 50% 52%, rgba(255,255,255,0) 40%, rgba(255,255,255,.14) 78%, rgba(255,255,255,.02) 100%);
+        mix-blend-mode: screen; transition: opacity .08s linear;
+      }
+      #vig {
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse 75% 70% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%);
+      }
+      .panel {
+        position: absolute; background: linear-gradient(180deg, rgba(10,14,22,.82), rgba(6,8,14,.68));
+        border: 2px solid rgba(255,140,26,.85);
+        box-shadow: 0 0 18px rgba(255,120,0,.28), inset 0 0 22px rgba(255,120,0,.09);
+        padding: 8px 14px 10px; clip-path: polygon(0 0, 100% 0, 100% 68%, calc(100% - 14px) 100%, 0 100%);
+      }
+      .label { font-size: 12px; letter-spacing: .28em; color: rgba(255,190,120,.9); }
+
+      /* speed */
+      #speedPanel { right: 26px; bottom: 22px; text-align: right; min-width: 190px; }
+      #speedVal { font-size: 66px; line-height: .86; letter-spacing: -.02em; color: #fff;
+        text-shadow: 0 0 22px rgba(255,140,26,.9), 0 4px 0 rgba(0,0,0,.5); }
+      #speedVal.boosted { color: #ffd9a0; text-shadow: 0 0 30px #ff7a00, 0 0 60px #ff4d00, 0 4px 0 rgba(0,0,0,.5); }
+      .mph { font-size: 13px; letter-spacing: .42em; color: rgba(255,255,255,.75); margin-top: 2px; }
+
+      /* boost */
+      #boostPanel { left: 26px; bottom: 22px; width: 230px; }
+      #boostBar { position: relative; height: 20px; margin-top: 6px; background: rgba(0,0,0,.55);
+        border: 1px solid rgba(255,255,255,.18); overflow: hidden; }
+      #boostFill { position: absolute; inset: 0; transform-origin: left; transform: scaleX(0);
+        background: linear-gradient(90deg, #ffb200, #ff6a00 60%, #ff2d00); }
+      #boostBar.charging #boostFill { background: linear-gradient(90deg, #7dff9b, #00e5a0); }
+      #boostTicks { position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 22px, rgba(0,0,0,.5) 22px 24px); }
+      #boostHint { position: absolute; right: 14px; bottom: 22px; width: 250px; text-align: right;
+        font-size: 11px; letter-spacing: .2em; color: rgba(255,255,255,.35); }
+
+      /* takedowns */
+      #scorePanel { left: 26px; top: 20px; min-width: 150px; }
+      #scoreVal { font-size: 40px; line-height: 1; color: #fff; text-shadow: 0 0 16px rgba(255,60,0,.8); }
+      #scoreSub { font-size: 11px; letter-spacing: .22em; color: rgba(255,190,120,.85); }
+
+      /* rival */
+      #rivalPanel { right: 26px; top: 20px; text-align: right; min-width: 170px; }
+      #rivalDist { font-size: 30px; line-height: 1; color: #fff; }
+      #rivalName { font-size: 12px; letter-spacing: .24em; color: #ff5a2d; }
+
+      /* big flashes */
+      #flash { position: absolute; inset: 0; display: grid; place-items: center; }
+      .big {
+        font-size: 92px; letter-spacing: .02em; color: #fff; opacity: 0;
+        text-shadow: 0 0 26px #ff5e00, 0 0 70px #ff2d00, 0 6px 0 rgba(0,0,0,.45);
+        transform: scale(.7);
+      }
+      #takedown { color: #ffcf7a; }
+      #crashed { color: #ff4432; text-shadow: 0 0 30px #ff0000, 0 6px 0 rgba(0,0,0,.5); }
+      .show { animation: pop .55s cubic-bezier(.16,1,.3,1) forwards; }
+      @keyframes pop {
+        0% { opacity: 0; transform: scale(.6) rotate(-4deg); }
+        14% { opacity: 1; transform: scale(1.14) rotate(1deg); }
+        30% { transform: scale(1); }
+        70% { opacity: 1; }
+        100% { opacity: 0; transform: scale(1.06); }
+      }
+      /* small pickup popup */
+      #pickup { position: absolute; left: 50%; top: 58%; transform: translateX(-50%);
+        font-size: 20px; letter-spacing: .18em; color: #9dffcf; opacity: 0;
+        text-shadow: 0 0 14px rgba(0,255,170,.8); }
+
+      #combo { position: absolute; left: 50%; top: 27%; transform: translateX(-50%); text-align: center;
+        font-size: 15px; letter-spacing: .3em; color: rgba(255,255,255,.85); opacity: 0; }
+      #sound { position: absolute; left: 50%; bottom: 6px; transform: translateX(-50%);
+        font-size: 10px; letter-spacing: .3em; color: rgba(255,255,255,.35); }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BPxlvMQO.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <div id="speedlines"></div>
+      <div id="vig"></div>
+
+      <div class="panel" id="scorePanel">
+        <div class="label">TAKEDOWNS</div>
+        <div id="scoreVal">0</div>
+        <div id="scoreSub">RIVALS WRECKED</div>
+      </div>
+
+      <div class="panel" id="rivalPanel">
+        <div class="label">RIVAL</div>
+        <div id="rivalDist">---</div>
+        <div id="rivalName">IN PURSUIT</div>
+      </div>
+
+      <div class="panel" id="boostPanel">
+        <div class="label">BOOST</div>
+        <div id="boostBar"><div id="boostFill"></div><div id="boostTicks"></div></div>
+      </div>
+      <div id="boostHint">W / UP GAS &nbsp; S DOWN BRAKE &nbsp; SPACE BOOST &nbsp; SHIFT DRIFT</div>
+
+      <div class="panel" id="speedPanel">
+        <div class="label">SPEED</div>
+        <div id="speedVal">0</div>
+        <div class="mph">MPH</div>
+      </div>
+
+      <div id="flash">
+        <div class="big" id="takedown">TAKEDOWN!</div>
+        <div class="big" id="crashed">CRASHED</div>
+      </div>
+      <div id="pickup">NEAR MISS +BOOST</div>
+      <div id="combo"></div>
+      <div id="sound">CLICK FOR SOUND</div>
+    </div>
+  </body>
+</html>

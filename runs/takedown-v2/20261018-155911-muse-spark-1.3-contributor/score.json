@@ -1,0 +1,168 @@
+{
+ "contestant": "muse-spark-1.3-contributor",
+ "run": "20261018-155911-muse-spark-1.3-contributor",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": false,
+  "leftRight": false
+ },
+ "parts": {
+  "feel": 2.8,
+  "takedown": 4.6,
+  "looks": 4.0,
+  "hud": 5.8,
+  "trailer": 5.0
+ },
+ "raw": 4.03,
+ "score": 3.0,
+ "judges": [
+  "gpt-6.1-sol-high",
+  "step-5-preview",
+  "opus-5.5-high",
+  "opus-5.5",
+  "deepseek-v4.1-flash"
+ ],
+ "votes": {
+  "gpt-6.1-sol-high": {
+   "feel": 2,
+   "takedown": 4,
+   "looks": 2,
+   "hud": 6,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Road has clear bends.",
+    "Speed, boost and takedown HUD react.",
+    "Trailer shows a rival and two takedown awards."
+   ],
+   "bad": [
+    "Car stays stuck against walls despite steering and boost.",
+    "Box cars and an empty, flat world look crude.",
+    "Particles obscure collisions; wall slams and rival wrecks are unclear."
+   ],
+   "one_line": "The boost and takedown text promise action, but most of the drive is spent stuck against a wall."
+  },
+  "step-5-preview": {
+   "feel": 4,
+   "takedown": 5,
+   "looks": 5,
+   "hud": 6,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding elevated highway with glowing lamps, barriers and a sunset palette \u2014 real bends to carve",
+    "HUD is properly Burnout: big MPH readout, boost bar, takedown counter, rival distance",
+    "Takedowns actually register with a big TAKEDOWN!/BOOST TAKEDOWN! banner and a counting rival"
+   ],
+   "bad": [
+    "The filmed drive crawls at 1-3 mph \u2014 the car stalls and barely moves for most of the test",
+    "Reverse failed and steering only creeps the car sideways at walking pace",
+    "Trailer shows 236 mph speed and takedowns the scripted drive never reproduces"
+   ],
+   "one_line": "Great bones \u2014 sunset highway, real bends, punchy takedown HUD \u2014 but the car crawls at 3 mph in the actual drive, so the Burnout fantasy only lives in the trailer."
+  },
+  "opus-5.5-high": {
+   "feel": 2,
+   "takedown": 5,
+   "looks": 5,
+   "hud": 6,
+   "trailer": 6,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road with barriers, lamp posts and a strong sunset palette",
+    "Trailer shows a big TAKEDOWN! banner, a takedown counter, a rival distance tag and a 248 mph boost",
+    "Burnout-like HUD: big italic speed number and a glowing boost bar"
+   ],
+   "bad": [
+    "In the filmed drive the car hits the wall and stays stuck at 1-3 mph under a cloud of smoke for about 50 s, with no crash and no respawn",
+    "Steering and reverse cannot be checked because the car is stuck; the 102 mph in the S phase looks like a reset, not reverse",
+    "The cars are blocky boxes, and the rival is never close in live play"
+   ],
+   "one_line": "The trailer sells a neon takedown racer, but when I actually played it, I spent the whole run grinding against the first wall at 2 mph."
+  },
+  "opus-5.5": {
+   "feel": 3,
+   "takedown": 5,
+   "looks": 5,
+   "hud": 6,
+   "trailer": 6,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Winding road with barriers, street lamps and a red sunset",
+    "The trailer shows 'TAKEDOWN!' text, a 'BOOST TAKEDOWN!' popup and the takedown counter going up",
+    "The HUD has big italic MPH, a blue boost bar, a takedown counter and the distance to the rival"
+   ],
+   "bad": [
+    "In the scripted drive, the car hits the wall at 5 s and stays stuck at 1-3 mph behind smoke for about 60 s, with no 'crashed' message and no respawn",
+    "Steering, drift and boost do not visibly work in the test film, and reverse cannot be read",
+    "The cars are rough box models, and the smoke particles cover the screen"
+   ],
+   "one_line": "The trailer looks like a real Burnout duel, but when I drove it myself I got stuck on the first wall and sat in smoke for a whole minute."
+  },
+  "deepseek-v4.1-flash": {
+   "feel": 3,
+   "takedown": 4,
+   "looks": 3,
+   "hud": 5,
+   "trailer": 3,
+   "controls": {
+    "forward": true,
+    "reverse": false,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Chase cam holds the car and the road genuinely bends, so forward speed reads fast (127-248 mph)",
+    "Takedown is called out with a big TAKEDOWN!/BOOST TAKEDOWN banner and the counter ticks 1 to 2",
+    "HUD has the Burnout staples: giant speed, segmented boost bar, takedown count, rival gap"
+   ],
+   "bad": [
+    "Huge white bokeh particle cloud floods the screen after any gas/boost and never clears, hiding the car and road",
+    "After the crash the speed sits at 1-2 mph for 30+ seconds with no fast respawn, so steering and reverse never register",
+    "World is a flat dark plane under a red gradient with boxy cars and featureless sky; the rival wreck itself is never visible"
+   ],
+   "one_line": "It looks the Burnout part with a big speedo and a TAKEDOWN banner, but the screen turns into a snowstorm of particles and then the car just dies stuck at 1 mph."
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "plan": "Claude Max 5x",
+ "plan_usd_week": 23.08,
+ "weekly_pct": 1.0,
+ "tokens": {
+  "input": 5026703,
+  "output": 64959
+ },
+ "note": "Account-wide delta in whole percent; other use of the same account in the window counts too.",
+ "five_hour_pct": 11.0,
+ "api_equiv_usd": 3.0604287999999986,
+ "usd": 0.23,
+ "summary": "1% of the weekly Claude Max 5x limit \u2248 0.23 $ of a 23.08 $ week"
+}

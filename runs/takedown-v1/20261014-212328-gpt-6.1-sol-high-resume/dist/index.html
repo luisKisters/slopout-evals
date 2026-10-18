@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11121b" />
+    <meta
+      name="description"
+      content="Redline: a fast, furious highway takedown racer. No grid. No rules. Just drive."
+    />
+    <title>REDLINE — Takedown</title>
+    <script type="module" crossorigin src="./assets/index-awNxYHxR.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-g_Yoc8k3.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-C8WaASMy.css">
+  </head>
+  <body>
+    <canvas id="game" aria-label="Redline highway racing game"></canvas>
+    <div class="screen-grain"></div>
+    <div class="vignette"></div>
+    <div id="boost-wash"></div>
+    <div id="impact-wash"></div>
+    <header class="topbar">
+      <div class="identity">
+        <div class="brand">
+          <span class="brand-mark"><i></i><i></i><i></i></span>REDLINE<span
+            class="brand-dot"
+            >®</span
+          >
+        </div>
+        <div class="brand-sub">
+          TAKEDOWN <span> / </span> NO RULES. JUST DRIVE.
+        </div>
+      </div>
+      <div class="route">
+        <span class="live-dot"></span> HARBOR EXPRESSWAY
+        <span class="route-number">07</span
+        ><small>WESTBOUND <span>•</span> SUNSET RUN</small>
+      </div>
+      <div class="tally">
+        <div class="tally-icon">✕</div>
+        <div>
+          <span class="eyebrow">TAKEDOWNS</span
+          ><strong id="takedown-count">00</strong>
+        </div>
+      </div>
+    </header>
+    <aside class="mission" id="mission">
+      <div class="mission-top">
+        <span class="target-icon">⌖</span><span>RIVAL ACTIVE</span
+        ><span class="mission-index">01</span>
+      </div>
+      <strong>MAKE CONTACT.</strong>
+      <p>Ram the rival into traffic or the wall.</p>
+      <div class="mission-rule"></div>
+      <div class="mission-hint">
+        <span class="yellow-dot"></span> YELLOW CAR
+        <span class="hint-right">MARKED FOR TAKEDOWN</span>
+      </div>
+    </aside>
+    <div id="rival-marker">
+      <div class="rival-name">RIVAL <span id="rival-distance">12 m</span></div>
+      <div class="marker-chevron"></div>
+    </div>
+    <div id="toast">
+      <span id="toast-small">WALL TAKEDOWN</span
+      ><strong id="toast-title">TAKEDOWN!</strong
+      ><span id="toast-footer">+100 BOOST</span>
+    </div>
+    <div id="mini-toast"></div>
+    <div class="combo" id="combo">
+      <span>DRIFTING</span><strong id="drift-score">0 m</strong><i></i>
+    </div>
+    <div class="bottom-ui">
+      <section class="boost-panel">
+        <div class="boost-label">
+          <span class="boost-icon">ϟ</span><span>BOOST</span
+          ><span id="boost-status">READY TO BURN</span>
+        </div>
+        <div class="boost-track">
+          <div id="boost-fill"></div>
+          <div class="boost-ticks"></div>
+        </div>
+        <div class="boost-foot">
+          <span><kbd>SPACE</kbd> HOLD TO BOOST</span
+          ><span id="boost-value">100%</span>
+        </div>
+      </section>
+      <div class="control-strip">
+        <div>
+          <span class="key-group"
+            ><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span
+          ><span>DRIVE</span>
+        </div>
+        <i></i>
+        <div><kbd>SHIFT</kbd><span>DRIFT</span></div>
+        <i></i>
+        <div><kbd>SPACE</kbd><span>BOOST</span></div>
+      </div>
+      <section class="speed-panel">
+        <div class="speed-top">
+          <span id="drive-state">FULL THROTTLE</span
+          ><span id="gear">GEAR 4</span>
+        </div>
+        <div class="speed-reading">
+          <strong id="speed">184</strong><span>KM<span>/</span>H</span>
+        </div>
+        <div class="rev-track"><div id="rev-fill"></div></div>
+        <div class="speed-foot">
+          <span class="speed-dot"></span><span id="distance">0.00</span> KM
+          <span class="run-label">FREE RUN</span>
+        </div>
+      </section>
+    </div>
+    <div class="sound-hint" id="sound-hint">
+      PRESS ANY KEY TO FEEL THE ENGINE <span>↗</span>
+    </div>
+    <button id="sound-toggle" aria-label="Toggle sound" title="Toggle sound">
+      SOUND <span id="sound-state">ON</span
+      ><span class="sound-bars"><i></i><i></i><i></i></span>
+    </button>
+  </body>
+</html>

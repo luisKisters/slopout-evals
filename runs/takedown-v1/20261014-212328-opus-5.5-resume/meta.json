@@ -1,0 +1,17 @@
+{
+ "run": "20261014-212328-opus-5.5-resume",
+ "contestant": "opus-5.5",
+ "harness": "claude",
+ "model": "claude-opus-5-5",
+ "effort": "",
+ "wall_min": 34,
+ "resumed_from": "/tmp/rescue2-opus-5.5",
+ "prior_min": 11,
+ "image": "slopout-box:v1",
+ "started": "2026-10-14T19:23:29Z",
+ "seconds": 197,
+ "exit": "0",
+ "timed_out": false,
+ "task": "takedown-v1",
+ "note": "Hit the Claude session limit after 10 min; continued in a new session. Cost of the first part is not measured."
+}

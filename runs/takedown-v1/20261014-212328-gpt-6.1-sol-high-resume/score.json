@@ -1,0 +1,82 @@
+{
+ "contestant": "gpt-6.1-sol-high",
+ "run": "20261014-212328-gpt-6.1-sol-high-resume",
+ "working": true,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true
+ },
+ "parts": {
+  "feel": 7.0,
+  "takedown": 7.5,
+  "looks": 6.5,
+  "hud": 8.0,
+  "trailer": 7.5
+ },
+ "raw": 7.17,
+ "score": 7.2,
+ "judges": [
+  "step-5-preview",
+  "opus-5.5"
+ ],
+ "votes": {
+  "step-5-preview": {
+   "feel": 8,
+   "takedown": 8,
+   "looks": 7,
+   "hud": 9,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "traffic_visible": true,
+   "good": [
+    "Auto-drives at ~190 km/h with a locked chase cam; boost pushes to 300+ and reads instantly",
+    "Giant speed, segmented boost bar, X-marked takedown counter and RIVAL WRECKED toast all react live",
+    "Clear TAKEDOWN! moment with the rival wrecked and counter incrementing"
+   ],
+   "bad": [
+    "Scripted drive slams into walls and crashes in a loop \u2014 barriers are too grabby",
+    "Traffic is promised but often absent; several frames show a completely empty road",
+    "Cars and skyline are plain low-poly boxes, right down to the odd pyramids on the horizon"
+   ],
+   "one_line": "Fast, punchy and very Burnout on the HUD, but the box-car world and crash-happy walls keep it from feeling like the real thing."
+  },
+  "opus-5.5": {
+   "feel": 6,
+   "takedown": 7,
+   "looks": 6,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "traffic_visible": true,
+   "good": [
+    "The sunset city skyline has lit windows, overhead gantry signs and streetlights, so the world reads as a real highway",
+    "There is a yellow rival with a RIVAL tag. Three to four TAKEDOWN! banners show in play, each with a subtitle (wall or traffic takedown)",
+    "The Burnout-style HUD has a big km/h readout, a segmented boost bar, a takedown counter and a CRASHED banner"
+   ],
+   "bad": [
+    "The player crashes very often from small steering inputs. Speed drops to 0 many times, which breaks the flow",
+    "Cars are low-poly blocks and the road surface is a flat dark plane. There is little speed blur or FOV kick at 290+ km/h",
+    "The rival wreck is small and far away. The takedown moment has no slow-mo or crash cam, so the hit has little punch"
+   ],
+   "one_line": "A good-looking, fast, low-poly Burnout clone with real takedowns, but you crash into traffic every few seconds and the takedowns don't hit hard."
+  }
+ }
+}

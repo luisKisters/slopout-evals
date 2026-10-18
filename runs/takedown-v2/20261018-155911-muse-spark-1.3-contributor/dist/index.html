@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BURNOUT DUEL — Takedown Racing</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,600;0,800;1,700;1,900&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:100%; height:100%; overflow:hidden; background:#0b0e18; font-family:'Archivo',Arial,sans-serif; }
+  #game { position:fixed; inset:0; }
+  canvas { display:block; }
+  #hud { position:fixed; inset:0; pointer-events:none; z-index:10; }
+  #takedownCount {
+    position:absolute; top:18px; left:22px; color:#fff;
+    font-family:'Archivo Black',sans-serif; font-size:26px; letter-spacing:1px;
+    text-shadow:0 2px 0 #000, 0 0 18px rgba(255,140,0,.7); font-style:italic;
+  }
+  #takedownCount small { display:block; font-size:12px; letter-spacing:4px; color:#ffb300; font-family:'Archivo',sans-serif; font-weight:800;}
+  #rivalTag {
+    position:absolute; top:16px; left:50%; transform:translateX(-50%);
+    color:#ff5252; font-weight:900; font-style:italic; font-size:18px; letter-spacing:2px;
+    text-shadow:0 2px 0 #000; background:rgba(0,0,0,.35); padding:6px 18px; border-radius:4px;
+    border:1px solid rgba(255,82,82,.5);
+  }
+  #speedo {
+    position:absolute; right:26px; bottom:18px; text-align:right; color:#fff;
+    font-style:italic; line-height:.9;
+  }
+  #speedVal { font-family:'Archivo Black',sans-serif; font-size:84px; color:#fff; text-shadow:0 4px 0 #000, 0 0 30px rgba(255,180,0,.55); }
+  #speedVal.boosting { color:#7fd4ff; text-shadow:0 4px 0 #000, 0 0 34px rgba(0,180,255,.9); }
+  #speedUnit { font-size:20px; font-weight:800; letter-spacing:6px; color:#ffb300; }
+  #boostWrap {
+    position:absolute; left:26px; bottom:24px; width:min(420px,42vw);
+  }
+  #boostLabel { color:#7fd4ff; font-weight:900; font-style:italic; letter-spacing:3px; font-size:15px; text-shadow:0 2px 0 #000; margin-bottom:6px;}
+  #boostLabel .key { border:1px solid #7fd4ff; border-radius:4px; padding:0 6px; margin-right:8px; font-size:12px;}
+  #boostBar { height:22px; background:rgba(0,0,0,.55); border:2px solid rgba(127,212,255,.8); border-radius:3px; overflow:hidden; transform:skewX(-18deg); box-shadow:0 0 18px rgba(0,180,255,.35);}
+  #boostFill { height:100%; width:30%; background:linear-gradient(180deg,#d6f4ff 0%,#4fc3ff 35%,#0077ff 70%,#003fa3 100%); transition:width .08s linear; box-shadow:0 0 14px #00b0ff inset;}
+  #boostBar.full { animation:boostPulse .5s infinite alternate; }
+  @keyframes boostPulse { from{box-shadow:0 0 10px rgba(0,180,255,.4);} to{box-shadow:0 0 26px rgba(0,200,255,1);} }
+  #driftTag {
+    position:absolute; left:26px; bottom:88px; color:#ffe082; font-weight:900; font-style:italic; font-size:22px;
+    opacity:0; text-shadow:0 2px 0 #000, 0 0 16px rgba(255,180,0,.8); transition:opacity .1s;
+  }
+  #flash {
+    position:absolute; top:32%; left:50%; transform:translate(-50%,-50%) skewX(-12deg) scale(1);
+    font-family:'Archivo Black',sans-serif; font-size:min(96px,11vw); font-style:italic; white-space:nowrap;
+    opacity:0; transition:opacity .12s;
+  }
+  #flash.takedown { color:#ffb300; text-shadow:0 6px 0 #7a2e00, 0 0 60px rgba(255,120,0,1), -3px -3px 0 #000, 3px 3px 0 #000; opacity:1; animation:pop .55s ease-out;}
+  #flash.crashed { color:#ff2d2d; text-shadow:0 6px 0 #4d0000, 0 0 60px rgba(255,0,0,.9), -3px -3px 0 #000, 3px 3px 0 #000; opacity:1; animation:pop .55s ease-out;}
+  @keyframes pop { 0%{transform:translate(-50%,-50%) skewX(-12deg) scale(2.2);} 60%{transform:translate(-50%,-50%) skewX(-12deg) scale(.95);} 100%{transform:translate(-50%,-50%) skewX(-12deg) scale(1);} }
+  #flashSub { position:absolute; top:calc(32% + 70px); left:50%; transform:translateX(-50%); color:#fff; font-weight:800; font-style:italic; font-size:20px; opacity:0; text-shadow:0 2px 0 #000;}
+  #controls {
+    position:absolute; top:56px; left:50%; transform:translateX(-50%);
+    color:rgba(255,255,255,.75); font-size:12px; font-weight:600; letter-spacing:1px;
+    background:rgba(0,0,0,.4); padding:6px 14px; border-radius:20px; white-space:nowrap;
+  }
+  #vignette { position:fixed; inset:0; pointer-events:none; z-index:5;
+    background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%);}
+  #speedlines { position:fixed; inset:0; pointer-events:none; z-index:5; opacity:0; transition:opacity .2s;
+    background:repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg 8deg, rgba(255,255,255,.06) 8deg 9deg);}
+  #fade { position:fixed; inset:0; background:#000; opacity:0; pointer-events:none; transition:opacity .18s; z-index:20;}
+</style>
+</head>
+<body>
+<div id="game"></div>
+<div id="vignette"></div>
+<div id="speedlines"></div>
+<div id="hud">
+  <div id="takedownCount"><small>TAKEDOWNS</small><span id="tdNum">0</span></div>
+  <div id="rivalTag">◄ RIVAL <span id="rivalDist">100m</span> ►</div>
+  <div id="driftTag">DRIFT +<span id="driftNum">0</span></div>
+  <div id="boostWrap">
+    <div id="boostLabel"><span class="key">SPACE</span>BOOST</div>
+    <div id="boostBar"><div id="boostFill"></div></div>
+  </div>
+  <div id="speedo"><div id="speedVal">0</div><div id="speedUnit">MPH</div></div>
+  <div id="flash"></div>
+  <div id="flashSub"></div>
+  <div id="controls">W GAS &nbsp;·&nbsp; S BRAKE &nbsp;·&nbsp; A/D STEER &nbsp;·&nbsp; SHIFT DRIFT &nbsp;·&nbsp; SPACE BOOST — slam the rival into the wall!</div>
+</div>
+<div id="fade"></div>
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.js" } }
+</script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

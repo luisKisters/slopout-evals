@@ -1,0 +1,13 @@
+{
+ "plan": "ChatGPT Plus",
+ "plan_usd_week": 4.62,
+ "weekly_pct": 6.0,
+ "tokens": {
+  "input": 4056108,
+  "output": 62597
+ },
+ "note": "From Codex rate-limit snapshots inside the run; usage before the first reply is missed.",
+ "five_hour_pct": 21.0,
+ "usd": 0.28,
+ "summary": "6% of the weekly ChatGPT Plus limit \u2248 0.28 $ of a 4.62 $ week"
+}

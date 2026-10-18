@@ -1,0 +1,168 @@
+{
+ "contestant": "opus-5.5-high",
+ "run": "20261018-155555-opus-5.5-high",
+ "working": true,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true
+ },
+ "parts": {
+  "feel": 4.4,
+  "takedown": 7.0,
+  "looks": 4.8,
+  "hud": 7.4,
+  "trailer": 7.2
+ },
+ "raw": 5.72,
+ "score": 5.7,
+ "judges": [
+  "gpt-6.1-sol-high",
+  "step-5-preview",
+  "opus-5.5",
+  "deepseek-v4.1-flash",
+  "muse-spark-1.3-contributor"
+ ],
+ "votes": {
+  "gpt-6.1-sol-high": {
+   "feel": 3,
+   "takedown": 7,
+   "looks": 4,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Trailer shows rival flips, sparks, and three takedowns.",
+    "Clear speed, boost, and takedown HUD reacts.",
+    "Visible bends and a consistent chase camera."
+   ],
+   "bad": [
+    "Scripted play spends most frames crawling against the barrier.",
+    "Drift and boost fail to restore useful movement in the controls test.",
+    "Boxy cars, repeated cone trees, and flat lighting look basic."
+   ],
+   "one_line": "The takedowns look fun in the trailer, but the filmed drive mostly shows a car stuck scraping the wall."
+  },
+  "step-5-preview": {
+   "feel": 5,
+   "takedown": 7,
+   "looks": 4,
+   "hud": 7,
+   "trailer": 6,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Takedown beat is genuinely Burnout: huge TAKEDOWN! text, RIVAL WRECKED badge, sparks, counter ticks 0 to 3, boost refills",
+    "Trailer proves real speed and drift - 271 to 398 km/h through bending corners with the chase cam locked behind the car",
+    "HUD is straight out of Burnout: big KM/H bottom-right, segmented boost bar, takedowns counter, rival gap readout"
+   ],
+   "bad": [
+    "Filmed drive is a brick: car sits at 2-12 km/h for 40 s with W held and never recovers after the 24 s crash",
+    "Rival stays 1 km+ ahead for the whole scripted film, so the duel the brief is built around never happens",
+    "Box car, cone trees, flat untextured primitives - generic low-poly Three.js demo look"
+   ],
+   "one_line": "The trailer sells a fun little Burnout-alike with punchy takedowns, but the moment the benchmark script actually drives it the car becomes a 3 km/h brick and the rival just drives away."
+  },
+  "opus-5.5": {
+   "feel": 3,
+   "takedown": 5,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Trailer shows real wall-slam takedowns with big TAKEDOWN! text, wreck, and smoke",
+    "HUD looks like Burnout: big italic speed, segmented boost bar, takedown count, rival gap",
+    "Road has bends, chevron signs, and red-white barriers; sunset low-poly scene is clean"
+   ],
+   "bad": [
+    "In the filmed drive the car rides into the barrier at the first bend and stays stuck at 2-11 km/h for about 50 s",
+    "Rival gets 3 km ahead and is never caught, so the drive shows no takedown",
+    "Steer, drift, and boost show no effect while the car is pinned to the wall"
+   ],
+   "one_line": "The trailer looks like a fun mini-Burnout, but when I played it I got stuck on the first wall and watched the rival drive off."
+  },
+  "deepseek-v4.1-flash": {
+   "feel": 5,
+   "takedown": 7,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 6,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "HUD is genuinely Burnout-shaped: huge speedo, segmented boost bar, takedown counter and rival gap",
+    "Takedown is readable and punchy - giant TAKEDOWN! banner, wrecked rival, counter 0-1-2-3, boost refilled",
+    "Winding barrier-lined road with real bends, and the camera stays locked behind the car"
+   ],
+   "bad": [
+    "In the filmed free play the car crawls at 2-12 km/h with W held, so speed and drift feel mostly don't come through",
+    "Flat low-poly cone-tree world is cohesive but thin and generic, nothing like Burnout's sense of place",
+    "Takedown banner scales up so large it smears across the whole screen in the trailer"
+   ],
+   "one_line": "It looks and reads like Burnout on the HUD, but the car spends the filmed drive stuck at walking pace, so the speed and drift never actually sell."
+  },
+  "muse-spark-1.3-contributor": {
+   "feel": 6,
+   "takedown": 9,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 9,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Punchy TAKEDOWN! with flying wreck and boost refill",
+    "Cohesive sunset world with barriers, trees, chevrons",
+    "Burnout-style HUD with speed, boost, rival distance"
+   ],
+   "bad": [
+    "Scripted run stuck crawling at 2-5 km/h after wall hit",
+    "No visible drift angle in drift test",
+    "Boxy cars and flat lighting look cheap up close"
+   ],
+   "one_line": "Fast and punchy when it gets going, but tap a wall and you crawl."
+  }
+ }
+}

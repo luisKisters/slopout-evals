@@ -1,0 +1,13 @@
+{
+ "plan": "OpenCode Go",
+ "plan_usd_week": 2.31,
+ "weekly_pct": null,
+ "tokens": {
+  "input": 13978780,
+  "output": 46440
+ },
+ "note": "OpenCode has no weekly limit readout; see provider_usd.",
+ "provider_usd": 0.06,
+ "usd": null,
+ "summary": "0.06 $ provider-reported"
+}

@@ -1,0 +1,16 @@
+{
+ "run": "20261018-155555-opus-5.5-high",
+ "task": "takedown-v2",
+ "contestant": "opus-5.5-high",
+ "harness": "claude",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "wall_min": 45,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v2",
+ "started": "2026-10-18T15:55:55Z",
+ "seconds": 1568,
+ "exit": "0",
+ "timed_out": false
+}

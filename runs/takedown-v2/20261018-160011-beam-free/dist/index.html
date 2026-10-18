@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Burnout Duel</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Segoe UI', Arial, sans-serif; }
+  #app { width: 100%; height: 100%; }
+  canvas { display: block; }
+  #hud { position: fixed; inset: 0; pointer-events: none; color: #fff; text-shadow: 0 2px 6px rgba(0,0,0,.8); }
+  #speed { position: absolute; bottom: 30px; left: 40px; font-size: 48px; font-weight: 900; font-style: italic; }
+  #speed small { font-size: 18px; opacity: .7; }
+  #boostwrap { position: absolute; bottom: 30px; left: 220px; width: 260px; height: 18px; border: 2px solid #fff; border-radius: 9px; overflow: hidden; background: rgba(0,0,0,.4); }
+  #boost { height: 100%; width: 100%; background: linear-gradient(90deg,#ff3,#f80,#f00); transition: width .05s linear; }
+  #takedowns { position: absolute; top: 30px; right: 40px; font-size: 22px; font-weight: 700; text-align: right; }
+  #takedowns .num { font-size: 44px; color: #ff4; }
+  #msg { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); font-size: 64px; font-weight: 900; font-style: italic; letter-spacing: 2px; opacity: 0; transition: opacity .15s; }
+  #msg.takedown { color: #ff4; text-shadow: 0 0 30px #f80, 0 4px 8px #000; }
+  #msg.crash { color: #fff; text-shadow: 0 0 20px #f00, 0 4px 8px #000; }
+  #msg.show { opacity: 1; }
+  #drift { position: absolute; bottom: 70px; left: 40px; font-size: 20px; color: #0ff; font-weight: 700; opacity: 0; }
+</style>
+  <script type="module" crossorigin src="/assets/index-CHtZhAUR.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<div id="hud">
+  <div id="speed">0<small> mph</small></div>
+  <div id="boostwrap"><div id="boost"></div></div>
+  <div id="takedowns">TAKEDOWNS<div class="num" id="tdnum">0</div></div>
+  <div id="msg"></div>
+  <div id="drift">DRIFTING</div>
+</div>
+</body>
+</html>

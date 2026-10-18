@@ -1,0 +1,82 @@
+{
+ "contestant": "opus-5.5",
+ "run": "20261014-212328-opus-5.5-resume",
+ "working": true,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true
+ },
+ "parts": {
+  "feel": 5.5,
+  "takedown": 5.5,
+  "looks": 5.0,
+  "hud": 7.5,
+  "trailer": 6.5
+ },
+ "raw": 5.75,
+ "score": 5.8,
+ "judges": [
+  "gpt-6.1-sol-high",
+  "step-5-preview"
+ ],
+ "votes": {
+  "gpt-6.1-sol-high": {
+   "feel": 5,
+   "takedown": 4,
+   "looks": 4,
+   "hud": 7,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": true,
+    "right": null
+   },
+   "rival_visible": true,
+   "traffic_visible": true,
+   "good": [
+    "Boost trails and sideways drift give useful feedback.",
+    "Clear speed, boost, rival distance, and takedown counter.",
+    "Sunset skyline and varied traffic fill the highway."
+   ],
+   "bad": [
+    "Repeated box buildings and crude cars limit visual quality.",
+    "Frequent crashes and an offscreen car disrupt driving.",
+    "Trailer records one takedown but does not clearly show the decisive impact."
+   ],
+   "one_line": "It looks like a working arcade racer, but the boxy world and repeated crashes fall short of Burnout's speed and impact."
+  },
+  "step-5-preview": {
+   "feel": 6,
+   "takedown": 7,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "traffic_visible": true,
+   "good": [
+    "Camera stays locked behind the car through drift and boost; controls all respond correctly",
+    "HUD is genuinely Burnout-like: big italic speed, segmented boost bar that drains/refills, takedown counter, rival distance banner",
+    "Trailer packs boosts, rival wreck, crash respawn and drift into 28s of clear moment-to-moment beats"
+   ],
+   "bad": [
+    "World is pure boxes with white-square debris particles; buildings repeat and there's little roadside detail",
+    "Idle vs gas motion energy nearly identical (17.5 vs 17.6) \u2014 weak raw speed feedback beyond the speedo numbers",
+    "Takedown reads as a small 'RIVAL WRECKED' banner instead of the punchy 'TAKEDOWN!' the brief asked for"
+   ],
+   "one_line": "A coherent low-poly Burnout slice with a strong HUD and working takedowns, but the box city and square debris keep it from feeling fast and real."
+  }
+ }
+}

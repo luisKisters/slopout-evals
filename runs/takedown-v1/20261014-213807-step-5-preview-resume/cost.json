@@ -1,0 +1,12 @@
+{
+ "plan": "OpenCode Go (free model)",
+ "plan_usd_week": 0.0,
+ "weekly_pct": 0.0,
+ "tokens": {
+  "input": 1477717,
+  "output": 3705
+ },
+ "note": "Free model; provider-reported cost 0.00 USD.",
+ "usd": 0.0,
+ "summary": "free model \u00b7 0 $"
+}

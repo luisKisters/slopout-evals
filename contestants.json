@@ -1,0 +1,9 @@
+[
+ {"id":"gpt-6.1-sol-high","label":"GPT-6.1 Sol (high)","harness":"codex","harness_label":"Codex CLI","model":"gpt-6.1-sol","effort":"high","plan":"ChatGPT Plus","plan_usd_month":20},
+ {"id":"step-5-preview","label":"Step 5 Preview","harness":"opencode","harness_label":"OpenCode","model":"opencode-go/step-5-preview","plan":"OpenCode Go","plan_usd_month":10},
+ {"id":"opus-5.5-high","label":"Claude Opus 5.5 (high)","harness":"claude","harness_label":"Claude Code","model":"claude-opus-5-5","effort":"high","plan":"Claude Max 5x","plan_usd_month":100},
+ {"id":"opus-5.5","label":"Claude Opus 5.5","harness":"claude","harness_label":"Claude Code","model":"claude-opus-5-5","plan":"Claude Max 5x","plan_usd_month":100},
+ {"id":"deepseek-v4.1-flash","label":"DeepSeek V4.1 Flash (high)","harness":"opencode","harness_label":"OpenCode","model":"deepseek/deepseek-flash","effort":"high","plan":"DeepSeek API","plan_usd_month":0},
+ {"id":"muse-spark-1.3-contributor","label":"Muse Spark 1.3 Contributor","harness":"opencode","harness_label":"OpenCode","model":"opencode-go/muse-spark-1.3-contributor","plan":"OpenCode Go","plan_usd_month":10},
+ {"id":"beam-free","label":"Beam Free","harness":"opencode","harness_label":"OpenCode","model":"opencode-go/beam-free","plan":"OpenCode Go","plan_usd_month":0,"judge":false,"grid":false}
+]

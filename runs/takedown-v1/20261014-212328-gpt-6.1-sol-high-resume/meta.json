@@ -1,0 +1,16 @@
+{
+ "run": "20261014-212328-gpt-6.1-sol-high-resume",
+ "contestant": "gpt-6.1-sol-high",
+ "harness": "codex",
+ "model": "gpt-6.1-sol",
+ "effort": "high",
+ "wall_min": 12,
+ "resumed_from": "/tmp/rescue2-gpt-6.1-sol-high",
+ "prior_min": 33,
+ "image": "slopout-box:v1",
+ "started": "2026-10-14T19:23:38Z",
+ "seconds": 500,
+ "exit": "0",
+ "timed_out": false,
+ "task": "takedown-v1"
+}

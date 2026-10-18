@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "loads": {
+      "pass": true,
+      "detail": "canvas 1920x1080"
+    },
+    "noConsoleErrors": {
+      "pass": true,
+      "detail": []
+    },
+    "rendersImage": {
+      "pass": true,
+      "detail": "mean 48.6 std 36.8"
+    },
+    "gasMovesForward": {
+      "pass": true,
+      "detail": "energy 6.93 vs idle 5.69, zoom 0.24"
+    },
+    "steerLeftRight": {
+      "pass": true,
+      "detail": "left shift 0, right shift -1.2"
+    },
+    "reverse": {
+      "pass": true,
+      "detail": "zoom -0.33, energy 5.66"
+    },
+    "fps30": {
+      "pass": true,
+      "detail": "p95 16.7 ms"
+    }
+  },
+  "passed": 7,
+  "total": 7,
+  "frameTimeMs": {
+    "p50": 16.7,
+    "p95": 16.7,
+    "p99": 16.8,
+    "samples": 3673
+  },
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+}

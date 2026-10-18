@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>DUEL // Burnout</title>
+<link rel="stylesheet" href="./src/style.css" />
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.js" } }
+</script>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="speedlines" id="speedlines"></div>
+
+  <div class="top">
+    <div class="tdblock">
+      <span class="micro">TAKEDOWNS</span>
+      <span class="tdnum" id="tdCount">0</span>
+    </div>
+    <div class="rivalblock">
+      <div class="rivalrow"><span class="micro">RIVAL</span><span class="rivaltag" id="rivalTag">DUEL</span></div>
+      <div class="rbar"><i id="rivalHealth"></i></div>
+    </div>
+    <div class="lapblock">
+      <span class="micro">LAP</span>
+      <span class="lapnum" id="lapNum">1</span>
+      <span class="timer" id="timer">0:00.0</span>
+    </div>
+  </div>
+
+  <div id="announce">
+    <div class="abig" id="announceBig">TAKEDOWN!</div>
+    <div class="asub" id="announceSub">RIVAL WRECKED</div>
+  </div>
+
+  <div class="driftwrap" id="driftWrap">
+    <div class="dlabel">DRIFT</div>
+    <div class="dbar"><i id="driftFill"></i></div>
+  </div>
+
+  <div class="bottom">
+    <div class="speedo">
+      <div class="speednum" id="speed">0</div>
+      <div class="speedmeta"><span>MPH</span><b id="gear">1</b></div>
+    </div>
+    <div class="boostwrap">
+      <div class="boosthead"><span>BOOST</span><em id="boostPct">50</em></div>
+      <div class="boostbar" id="boostBar"></div>
+    </div>
+  </div>
+
+  <div class="flash" id="flash"></div>
+  <div class="hitflash" id="hitflash"></div>
+  <div class="crashlines" id="crashlines"></div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
