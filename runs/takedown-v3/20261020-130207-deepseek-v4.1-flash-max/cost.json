@@ -1,0 +1,34 @@
+{
+ "plan": "OpenCode Go",
+ "plan_usd_month": 10.0,
+ "tokens": {
+  "input": 973447,
+  "cache_read": 20587648,
+  "cache_write": 0,
+  "output": 95486,
+  "reasoning": 131315,
+  "total": 21787896
+ },
+ "measured": null,
+ "estimated": {
+  "usd": 0.04,
+  "month_pct": 0.35,
+  "usd_per_mtok": 0.0016099948,
+  "monthly_tokens": 6211200000,
+  "confidence": "medium",
+  "data_date": "2026-09-30",
+  "source": "real-api-pricing: OpenCode Go x deepseek-v4.1-flash"
+ },
+ "provider_usd": 0.34,
+ "resumes": 0,
+ "waited_min": 0.0,
+ "exit_reason": "agent_done",
+ "agent_min": 94.3,
+ "wall_min": 120,
+ "usd": 0.04,
+ "usd_kind": "estimated",
+ "month_pct": 0.35,
+ "month_pct_kind": "estimated",
+ "weekly_pct": null,
+ "summary": "0.04 $ (estimated) \u00b7 0.35% est. \u00b7 21.8M tokens"
+}

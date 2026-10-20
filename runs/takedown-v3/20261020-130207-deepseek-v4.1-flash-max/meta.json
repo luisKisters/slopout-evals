@@ -1,0 +1,39 @@
+{
+ "run": "20261020-130207-deepseek-v4.1-flash-max",
+ "task": "takedown-v3",
+ "contestant": "deepseek-v4.1-flash-max",
+ "harness": "opencode",
+ "model": "opencode-go/deepseek-v4.1-flash",
+ "effort": "max",
+ "wall_min": 120,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v3",
+ "box": "sl-deepseek-v4-1-flash-max-1020145452",
+ "started": "2026-10-20T13:02:07Z",
+ "seconds": 5658,
+ "elapsed_seconds": 5658,
+ "exit": "0",
+ "timed_out": false,
+ "waited_seconds": 0,
+ "waited_min": 0.0,
+ "resumes": 0,
+ "exit_reason": "agent_done",
+ "segments": [
+  {
+   "segment": 0,
+   "start": 1792501329,
+   "end": 1792506987,
+   "secs": 5658,
+   "exit": "0",
+   "limit": {
+    "limited": false,
+    "reset": null,
+    "kind": "",
+    "message": ""
+   },
+   "waited_secs": 0
+  }
+ ],
+ "finished": "2026-10-20T14:36:31Z"
+}

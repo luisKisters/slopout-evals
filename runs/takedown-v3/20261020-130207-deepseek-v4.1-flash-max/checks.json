@@ -1,0 +1,69 @@
+{
+  "checks": {
+    "loads": {
+      "status": "pass",
+      "pass": true,
+      "detail": "canvas 1280x720"
+    },
+    "noConsoleErrors": {
+      "status": "pass",
+      "pass": true,
+      "detail": []
+    },
+    "rendersImage": {
+      "status": "pass",
+      "pass": true,
+      "detail": "mean 43.7 std 43.6"
+    },
+    "gasMovesForward": {
+      "status": "pass",
+      "pass": true,
+      "detail": "energy 12.64 vs idle 1.04, zoom 0.43"
+    },
+    "steerLeftRight": {
+      "status": "fail",
+      "pass": false,
+      "detail": "reversed steering. player car (Group): yaw rate change A -27.6°/s, D 38.7°/s, Shift+A -45.3°/s; pixels: left shift -5.93, right shift 5.4"
+    },
+    "reverse": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "zoom 0.09, energy 0.56"
+    },
+    "fps30": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "not measured: software GL on a CPU box (virtual clock, 98 ms CPU per frame)"
+    },
+    "noAutoSteer": {
+      "status": "pass",
+      "pass": true,
+      "detail": "player car (Group): turned up to 0° in 5.8 s of gas only, then speed loss (wall or off road)"
+    },
+    "boostNoFlicker": {
+      "status": "pass",
+      "pass": true,
+      "detail": "fov 72.0-87.0° with 1 direction changes in 3 s of space on an empty bar"
+    },
+    "shiftDrift": {
+      "status": "pass",
+      "pass": true,
+      "detail": "player car (Group): slip 51.2° with shift vs 45.7° without; yaw -40.3° vs -35.4°"
+    },
+    "rivalSpawn": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "no rival with the same model as the player car"
+    }
+  },
+  "passed": 7,
+  "total": 11,
+  "frameTimeMs": {
+    "p50": 98,
+    "p95": 6561,
+    "p99": 7670,
+    "samples": 2250,
+    "kind": "cpu ms per frame (software GL, not game fps)"
+  },
+  "renderer": null
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0d12" />
+    <title>SUNBURN GP</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>" />
+    <script type="module" crossorigin src="/assets/index-CJSAGayB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BlPpNzjv.css">
+  </head>
+  <body>
+    <main id="app">
+      <div id="loading">
+        <div class="load-mark">SUNBURN<span>GP</span></div>
+        <div class="load-sub">BUILDING THE FURNACE MILE</div>
+        <div class="load-track"><b></b></div>
+        <div class="load-note">8 CARS // 3 LAPS // NO MERCY</div>
+      </div>
+
+      <div id="hud" aria-hidden="true">
+        <div class="hud-tl">
+          <div class="brand-mini">SUNBURN <span>GP</span></div>
+          <div class="lap-block">
+            <span class="label">LAP</span>
+            <b id="lap">1</b><i>/ 3</i>
+          </div>
+          <div class="time-row"><span id="lapTime">0:00.00</span><em id="bestLap">BEST --:--.--</em></div>
+        </div>
+
+        <div class="hud-tr">
+          <div class="pos-block">
+            <span id="pos">1</span><sup id="posSuffix">ST</sup>
+            <small>/ 8</small>
+          </div>
+          <div class="pos-label">POSITION</div>
+          <div class="take-row">
+            <span class="take-icon">✕</span>
+            <span id="takedowns">0</span><em>TAKEDOWNS</em>
+          </div>
+        </div>
+
+        <div class="hud-mid">
+          <div id="drift" class="drift"><span>DRIFT</span><b id="driftScore">+0</b></div>
+          <div id="impactFlash"></div>
+        </div>
+
+        <div id="takedownCard" class="takedown-card">
+          <div class="take-slashes"></div>
+          <div class="take-kicker">RIVAL WRECKED</div>
+          <div class="take-word">TAKEDOWN<span>!</span></div>
+          <div class="take-reward">+35 BOOST <i>//</i> SHOW NO MERCY</div>
+        </div>
+
+        <div id="crashCard" class="crash-card">
+          <div class="crash-word">CRASHED</div>
+          <div class="crash-sub">RESPAWNING...</div>
+        </div>
+
+        <div id="countdown" class="countdown"></div>
+        <div id="raceMessage" class="race-message"></div>
+
+        <div class="hud-bl">
+          <div class="take-counter"><span>✕</span><b id="takedowns2">0</b><em>WRECKS</em></div>
+          <div id="zone" class="zone">HARBOR STRAIGHT</div>
+          <div id="audioHint" class="audio-hint">PRESS ANY KEY FOR SOUND</div>
+        </div>
+
+        <div class="speed-panel">
+          <div class="speed-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="speed-num" id="speed">0</div>
+          <div class="speed-unit">KM/H</div>
+          <div class="gear" id="gear">N</div>
+        </div>
+
+        <div class="boost-panel">
+          <div class="boost-head"><span>BOOST</span><em id="boostState">READY</em></div>
+          <div class="boost-bar">
+            <div class="boost-fill" id="boostFill"></div>
+            <div class="boost-segments"></div>
+            <div class="boost-threshold"></div>
+          </div>
+          <div class="boost-foot"><span>SHIFT</span> DRIFT <span>SPACE</span> BOOST <span>WASD</span> DRIVE</div>
+        </div>
+
+        <div id="wrongWay" class="wrong-way">WRONG WAY</div>
+      </div>
+
+      <div id="result" class="result">
+        <div class="result-noise"></div>
+        <div class="result-kicker">RACE COMPLETE <i>//</i> THE FURNACE MILE</div>
+        <div class="result-place"><span id="resultOrdinal">1ST</span><small>/ 8</small></div>
+        <div class="result-title" id="resultTitle">YOU WIN</div>
+        <div class="result-stats">
+          <div><span>TOTAL TIME</span><b id="resultTime">0:00.00</b></div>
+          <div><span>BEST LAP</span><b id="resultBest">0:00.00</b></div>
+          <div><span>TAKEDOWNS</span><b id="resultTakedowns">0</b></div>
+        </div>
+        <div class="restart">PRESS <kbd>R</kbd> TO RESTART</div>
+        <div class="result-foot">SUNBURN GP // NO OFFICIAL RECORDS WERE HARMED</div>
+      </div>
+
+      <canvas id="speedfx"></canvas>
+      <div id="vignette"></div>
+      <div id="damage"></div>
+    </main>
+  </body>
+</html>

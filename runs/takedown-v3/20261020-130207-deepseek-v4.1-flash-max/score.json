@@ -1,0 +1,157 @@
+{
+ "contestant": "deepseek-v4.1-flash-max",
+ "run": "20261020-130207-deepseek-v4.1-flash-max",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": false,
+  "noAutoSteer": true,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "fail",
+  "reverse": "unknown",
+  "fps30": "unknown",
+  "noAutoSteer": "pass",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "pass",
+  "rivalSpawn": "unknown"
+ },
+ "parts": {
+  "feel": 3.25,
+  "takedown": 6.25,
+  "looks": 5.5,
+  "hud": 7.75,
+  "trailer": 7.0
+ },
+ "raw": 5.31,
+ "score": 3.0,
+ "judges": [
+  "opus-5.5-xhigh",
+  "sonnet-5.5-xhigh",
+  "gpt-6.1-sol-xhigh",
+  "minimax-m3.1-flash-free"
+ ],
+ "votes": {
+  "opus-5.5-xhigh": {
+   "feel": 3,
+   "takedown": 6,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Bold Burnout-style HUD with big speed number, position, lap, segmented boost bar and takedown count",
+    "Trailer shows a punchy angled TAKEDOWN card, near-miss boost and speeds up to 300 km/h",
+    "Coherent sunset city look with grandstands, a start gantry and a cable-stayed bridge"
+   ],
+   "bad": [
+    "Steering failed the measured check, and after the first crash the car stays pinned against the wall at 0-30 km/h in 8th for the whole free-play section",
+    "WRONG WAY shows up again and again: after a crash the car can't get back into the race",
+    "City blocks are plain black boxes and the scene is very dark and repetitive close up"
+   ],
+   "one_line": "The HUD and takedown card look the part, but one wall hit leaves you stuck grinding the barrier in last place with steering that doesn't work."
+  },
+  "sonnet-5.5-xhigh": {
+   "feel": 4,
+   "takedown": 6,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong Burnout-style HUD with big speed readout, position, boost bar and takedown count",
+    "Punchy TAKEDOWN card and CRASHED/NEAR MISS popups, sunset city skyline with bridge",
+    "Trailer shows 300 km/h speed, boost, rivals and a takedown"
+   ],
+   "bad": [
+    "In the controls test the car crashes at about 10 s and then sits stuck at near-zero speed against a wall, flagged 'WRONG WAY'. It stays at 8th for the rest of the film.",
+    "Steer-left check failed. The steering rows show a car that hardly moves, so left/right can't be confirmed.",
+    "Scenery is flat and dark with box buildings. The car is low-poly, and the road is a dull dark asphalt."
+   ],
+   "one_line": "It looks and sounds like a Burnout-style game with a great HUD and a punchy takedown, but in the scripted test the car crashes at full speed, gets stuck on a wall and stays last."
+  },
+  "gpt-6.1-sol-xhigh": {
+   "feel": 3,
+   "takedown": 6,
+   "looks": 4,
+   "hud": 8,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Bold HUD visibly tracks speed, boost and race position.",
+    "Large takedown card and sparks sell impacts.",
+    "Walkthrough shows fast bends, rivals and a bridge."
+   ],
+   "bad": [
+    "Steering directions fail the control check.",
+    "Repeated wall trapping leaves the car barely moving.",
+    "Repetitive box towers and flat surfaces make the world sparse."
+   ],
+   "one_line": "The fast runs and takedown flash look promising, but broken steering and getting stuck against walls spoil the racing."
+  },
+  "minimax-m3.1-flash-free": {
+   "feel": 3,
+   "takedown": 7,
+   "looks": 7,
+   "hud": 8,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": false,
+    "right": false
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "HUD is genuinely Burnout-like: position, lap 1/3, segmented boost bar, tachometer speed, wrecks/takedowns, DRIFT and TAKEDOWN cards",
+    "Real track content - start gantry with crowd stands, city canyon, suspension bridge over a cliff - plus 7 distinctly coloured rivals",
+    "Drift gives instant slip, tyre smoke and a DRIFT card; boost is clearly faster and camera blur sells the speed"
+   ],
+   "bad": [
+    "Steering is inverted: A turns the car right and D turns it left (confirmed in source and by live test) - a brief-mandated failure the agent's own test mis-signed",
+    "The scripted drive spends most of the film pinned against a barrier at 0-3 km/h with WRONG WAY on screen, so the graded run never shows a clean lap",
+    "Cars jam nose-first into walls with gas held and give no escape; the walkthrough MP4 has no audio track despite the sound-heavy brief"
+   ],
+   "one_line": "The look and HUD are convincing Burnout, but the steering is inverted, so every turn goes the wrong way and the car ends up grinding along the barrier."
+  }
+ }
+}
