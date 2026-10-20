@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>IGNITION CIRCUIT</title>
+  <script type="module" crossorigin src="./assets/index-jWnHna0K.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Da7E39nu.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="scene"></canvas>
+
+    <!-- ================= HUD ================= -->
+    <div id="hud">
+      <!-- top left : position / lap / takedowns -->
+      <div class="hud-corner tl">
+        <div class="stat pos">
+          <div class="pos-big"><span id="pos-num">1</span><em id="pos-suffix">ST</em></div>
+          <div class="pos-sub">POSITION <span id="pos-of">/8</span></div>
+        </div>
+        <div class="row">
+          <div class="stat small"><label>LAP</label><b><span id="lap-num">1</span><span class="dim">/3</span></b></div>
+          <div class="stat small"><label>TAKEDOWNS</label><b id="td-num">0</b></div>
+        </div>
+      </div>
+
+      <!-- top right : minimap -->
+      <div class="hud-corner tr">
+        <canvas id="minimap" width="220" height="220"></canvas>
+      </div>
+
+      <!-- bottom left : speed -->
+      <div class="hud-corner bl">
+        <div class="speed-wrap">
+          <div class="speed-num" id="speed-num">0</div>
+          <div class="speed-unit">KM/H</div>
+        </div>
+        <div class="drift-flag" id="drift-flag">DRIFT</div>
+      </div>
+
+      <!-- bottom right : boost -->
+      <div class="hud-corner br">
+        <div class="boost-label" id="boost-label">BOOST</div>
+        <div class="boost-bar"><div class="boost-fill" id="boost-fill"></div><div class="boost-ticks"></div></div>
+        <div class="boost-hint" id="boost-hint">SPACE</div>
+      </div>
+
+      <!-- center overlays -->
+      <div id="center-msg"></div>
+      <div id="takedown" class="hidden">
+        <div class="td-inner">
+          <div class="td-flash"></div>
+          <div class="td-text">TAKEDOWN!</div>
+          <div class="td-sub">RIVAL WRECKED</div>
+        </div>
+      </div>
+      <div id="crashed" class="hidden"><span>CRASHED</span><small>recovering…</small></div>
+      <div id="countdown" class="hidden"></div>
+
+      <!-- result -->
+      <div id="result" class="hidden">
+        <div class="res-card">
+          <div class="res-head" id="res-head">FINISH</div>
+          <div class="res-pos" id="res-pos">1ST</div>
+          <div class="res-rows" id="res-rows"></div>
+          <div class="res-hint">PRESS <b>R</b> TO RESTART</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading"><div class="ld-inner"><div class="ld-title">IGNITION CIRCUIT</div><div class="ld-sub">loading…</div></div></div>
+  </div>
+</body>
+</html>

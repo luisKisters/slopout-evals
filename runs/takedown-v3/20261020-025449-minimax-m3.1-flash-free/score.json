@@ -1,0 +1,129 @@
+{
+ "contestant": "minimax-m3.1-flash-free",
+ "run": "20261020-025449-minimax-m3.1-flash-free",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": false,
+  "leftRight": true,
+  "noAutoSteer": true,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "pass",
+  "reverse": "unknown",
+  "fps30": "unknown",
+  "noAutoSteer": "unknown",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "pass",
+  "rivalSpawn": "unknown"
+ },
+ "parts": {
+  "feel": 4.33,
+  "takedown": 4.67,
+  "looks": 3.67,
+  "hud": 6.0,
+  "trailer": 5.33
+ },
+ "raw": 4.58,
+ "score": 3.0,
+ "judges": [
+  "opus-5.5-xhigh",
+  "sonnet-5.5-xhigh",
+  "gpt-6.1-sol-xhigh"
+ ],
+ "votes": {
+  "opus-5.5-xhigh": {
+   "feel": 5,
+   "takedown": 5,
+   "looks": 4,
+   "hud": 6,
+   "trailer": 6,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Real bends, and holding only W runs the car off the road, so there is no auto-steer",
+    "Drift shows smoke and a DRIFT tag; boost has a ring effect, motion blur and reaches about 200 km/h",
+    "The trailer shows a TAKEDOWN! card, and the takedown counter goes up"
+   ],
+   "bad": [
+    "Free play crashes very often (CRASHED shows up 4 times in 40 s) and the player stays in 8th",
+    "The world is a flat green plane with repeated box towers and sparse low-poly trees, so it looks generic",
+    "The lap and takedown numbers are tiny and hard to read; the takedown card is small and faded"
+   ],
+   "one_line": "It drives and drifts on a real circuit with some sense of speed, but it's a bland low-poly plain where you crash all the time and takedowns barely register."
+  },
+  "sonnet-5.5-xhigh": {
+   "feel": 4,
+   "takedown": 5,
+   "looks": 4,
+   "hud": 6,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Burnout-style HUD with a big italic speed readout, boost bar, position, lap and a minimap",
+    "Real motion blur, boost effects and drift smoke give some sense of speed on the straights",
+    "Takedown text, CRASHED overlay and rivals that visibly get knocked around"
+   ],
+   "bad": [
+    "The car crashes and stalls constantly, with speed dropping to single digits, so it never builds a proper flow",
+    "Flat green fields, grey box towers and low-poly trees look like a generic AI prototype, and the car is a blocky box",
+    "The takedown card is faint and small, and the game was stuck in 8th place most of the run"
+   ],
+   "one_line": "It's a playable arcade racer with a decent HUD and boost blur, but the world is bland, the car keeps wrecking, and it doesn't feel like Burnout."
+  },
+  "gpt-6.1-sol-xhigh": {
+   "feel": 4,
+   "takedown": 4,
+   "looks": 3,
+   "hud": 6,
+   "trailer": 5,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Readable speed and reactive boost bar",
+    "Rivals, sparks and takedown feedback are visible",
+    "Bends and smoky sideways slides"
+   ],
+   "bad": [
+    "Flat scenery, repetitive block towers and crude cars",
+    "Curb contact repeatedly leaves the car crawling",
+    "Trailer becomes a long, mostly empty straightaway run"
+   ],
+   "one_line": "There are arcade racing basics here, but the barren track and repeated curb stalls make it feel like a rough prototype."
+  }
+ }
+}

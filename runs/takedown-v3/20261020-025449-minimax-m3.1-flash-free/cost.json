@@ -1,0 +1,26 @@
+{
+ "plan": "OpenCode Go (free model)",
+ "plan_usd_month": 0.0,
+ "tokens": {
+  "input": 250095,
+  "cache_read": 31428257,
+  "cache_write": 0,
+  "output": 86524,
+  "reasoning": 115530,
+  "total": 31880406
+ },
+ "measured": null,
+ "estimated": null,
+ "provider_usd": 0.0,
+ "resumes": 0,
+ "waited_min": 0.0,
+ "exit_reason": "agent_done",
+ "agent_min": 100.8,
+ "wall_min": 120,
+ "usd": 0.0,
+ "usd_kind": "free",
+ "month_pct": 0.0,
+ "month_pct_kind": "free",
+ "weekly_pct": null,
+ "summary": "free model \u00b7 0 $ \u00b7 31.9M tokens"
+}
