@@ -88,7 +88,21 @@ for (const t of tasks) {
 }
 
 const fmtUsd = (r) => (r.usd == null ? '?' : r.usd === 0 ? '$0' : `$${r.usd.toFixed(2)}`);
-const costSub = (r) => (r.cost.weekly_pct != null && r.cost.plan_usd_week ? `${r.cost.weekly_pct}% of a ${r.cost.plan} week` : r.cost.plan ?? '');
+const costSub = (r) => (r.cost.month_pct != null && r.cost.month_pct_kind !== 'free' ? `${r.cost.month_pct}% of ${r.cost.plan}/month (${r.cost.month_pct_kind})`
+  : r.cost.weekly_pct != null && r.cost.plan_usd_week ? `${r.cost.weekly_pct}% of a ${r.cost.plan} week` : r.cost.plan ?? '');
+const tk = (n) => (n >= 1e5 ? `${(n / 1e6).toFixed(1)}M` : `${Math.round((n ?? 0) / 1e3)}k`);
+// One line about the run: usage-limit pauses, exit reason, tokens, measured vs estimated share of the plan.
+const runLine = (r) => {
+  const c = r.cost, t = c.tokens ?? {}, m = c.measured ?? {}, e = c.estimated ?? {};
+  const bits = [
+    r.meta.resumes != null ? `${r.meta.resumes} usage-limit pause${r.meta.resumes === 1 ? '' : 's'}${r.meta.resumes ? ` (${r.meta.waited_min} min waited, clock paused)` : ''}` : '',
+    r.meta.exit_reason ? `exit: ${r.meta.exit_reason}` : '',
+    t.total != null ? `tokens: ${tk(t.input)} in, ${tk(t.cache_read)} cache read, ${tk(t.cache_write)} cache write, ${tk(t.output)} out, ${tk(t.reasoning)} reasoning` : '',
+    m.month_pct != null ? `measured: ${m.weekly_pct}% of a week, ${m.five_hour_pct}% of 5 h = ${m.month_pct}% of the month` : '',
+    e.month_pct != null ? `estimated: ${e.month_pct}% of the month, $${e.usd} (${e.source})` : '',
+  ].filter(Boolean);
+  return bits.length ? `<p class="note dim">${esc(bits.join(' · '))}</p>` : '';
+};
 const bar = (v) => `<td class="part" style="--v:${Math.max(0, Math.min(10, v)) * 10}%">${Number(v).toFixed(1)}</td>`;
 const state = (r) => (r.score.working
   ? '<span class="pill ok">working</span>'
@@ -129,6 +143,7 @@ function card(r, i) {
   const notes = [
     r.rating?.note ? `<p class="note"><b>Luis${r.rating.score != null ? ` · ${esc(r.rating.score)}/10` : ''}:</b> ${esc(r.rating.note)}</p>` : '',
     r.meta.note ? `<p class="note dim">${esc(r.meta.note)}</p>` : '',
+    runLine(r),
     !r.score.working ? `<p class="note dim">Broken: ${esc(r.failed.join(', ') || 'a hard check failed')}. Score capped at 3 (raw ${r.score.raw}).</p>` : '',
   ].join('');
   return `
@@ -195,7 +210,7 @@ ${t.runs[0].preview ? `<meta property="og:image" content="${t.runs[0].preview}">
   <section id="how" class="how">
     <h2>How it is scored</h2>
     <ul>
-      <li><b>Hard checks.</b> It builds, loads, has no console errors, renders an image, holds 30 fps, and drives forward, reverse, left and right. One fail means <span class="pill bad">broken</span> and the score is capped at 3. A control passes on the motion check or the judge majority.</li>
+      <li><b>Hard checks.</b> It builds, loads, has no console errors, renders an image, holds 30 fps, and drives forward, reverse, left and right. From takedown-v3 on also: no auto-steer, no boost flicker on an empty bar, rivals start beside or behind you, shift gives a visible slide. One fail means <span class="pill bad">broken</span> and the score is capped at 3. A measured fail is final; only a control the measurement cannot see goes to the judge majority. Boxes have no GPU, so 30 fps is not measured there.</li>
       <li><b>Judges.</b> The other models see contact sheets of a filmed key script and the agent's own trailer. Score = ${PARTS.map((p) => `${p === 'hud' ? 'HUD' : p} ${WEIGHTS[p]} %`).join(', ')}.</li>
       <li><b>Cost.</b> For subscription plans: the share of the weekly limit the run used, priced at the plan. For APIs: the real spend.</li>
       <li><b>Luis.</b> My own rating after playing each game. Taste, not a formal score.</li>
