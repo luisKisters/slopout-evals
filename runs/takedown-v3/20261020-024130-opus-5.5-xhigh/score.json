@@ -1,0 +1,129 @@
+{
+ "contestant": "opus-5.5-xhigh",
+ "run": "20261020-024130-opus-5.5-xhigh",
+ "working": true,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true,
+  "noAutoSteer": true,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "pass",
+  "reverse": "pass",
+  "fps30": "unknown",
+  "noAutoSteer": "unknown",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "pass",
+  "rivalSpawn": "pass"
+ },
+ "parts": {
+  "feel": 5.33,
+  "takedown": 2.33,
+  "looks": 5.33,
+  "hud": 7.0,
+  "trailer": 0.0
+ },
+ "raw": 4.1,
+ "score": 4.1,
+ "judges": [
+  "sonnet-5.5-xhigh",
+  "gpt-6.1-sol-xhigh",
+  "minimax-m3.1-flash-free"
+ ],
+ "votes": {
+  "sonnet-5.5-xhigh": {
+   "feel": 6,
+   "takedown": 3,
+   "looks": 6,
+   "hud": 7,
+   "trailer": 0,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Speed sense is good: blur, speed lines, boost flames and a clear drift with smoke and a DRIFT! label",
+    "Varied world: city, coast, bridge pillars and cliffs, with a sunset sky and a styled Burnout-like HUD",
+    "With only W held the car hit the wall and scraped, so there is no auto-steer"
+   ],
+   "bad": [
+    "Takedowns stay at 0 in every frame and the player is stuck in 7th or 8th, so no takedown or slow-motion card is shown",
+    "The car spends a lot of time grinding along walls in a spray of sparks, and the rivals are mostly out of sight",
+    "Low-poly buildings and flat grass look generic, and no walkthrough sheet was provided"
+   ],
+   "one_line": "It has a fast, good-looking arcade feel with a solid drift and boost, but the rivals barely show up and I never saw a takedown."
+  },
+  "gpt-6.1-sol-xhigh": {
+   "feel": 5,
+   "takedown": 2,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 0,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Visible sideways drifts, smoke and distinct boost effects.",
+    "Clear HUD with reacting speed and boost indicators.",
+    "Wide roads with city, bridge and coastal bends."
+   ],
+   "bad": [
+    "Prolonged wall scraping dominates the drive; effects sometimes obscure the car.",
+    "Blocky scenery and flat lighting limit visual polish.",
+    "No takedown demonstrated and no walkthrough sheet supplied."
+   ],
+   "one_line": "The drifting and boost look entertaining, but the endless barrier grinding and absent combat leave it feeling like a rough racing prototype."
+  },
+  "minimax-m3.1-flash-free": {
+   "feel": 5,
+   "takedown": 2,
+   "looks": 5,
+   "hud": 7,
+   "trailer": 0,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Drift, boost threshold and HUD all behave: shift throws smoke with a 'DRIFT!' callout, boost needs a filled bar and shows exhaust flames",
+    "No auto-steer \u2014 holding only W drives you off the road into the barrier, and A/D visibly steer into the right wall",
+    "Track has real variety (lit city, coastal cliff run, elevated bridge/viaduct, tunnel-like section) and the HUD is complete: speed, boost bar, 8TH/8, LAP 1/3, takedowns"
+   ],
+   "bad": [
+    "Takedowns never once happened in the filmed drive \u2014 the counter stays 0 and the player sat 8TH/8 for 70s, so slamming rivals into walls is unproven",
+    "Visuals are flat low-poly: blocky orange car, grainy/static-looking asphalt, plain gradient sky and daylight with no motion blur or FOV punch, so 260 km/h reads as 'floating along'",
+    "No walkthrough sheet was provided, and there is no visible speed-effect work (no blur, no camera shake, no roadside rush)"
+   ],
+   "one_line": "Drifting and boost genuinely work, but it's cardboard cars on a flat gray road and in two minutes of driving I never saw one takedown."
+  }
+ }
+}

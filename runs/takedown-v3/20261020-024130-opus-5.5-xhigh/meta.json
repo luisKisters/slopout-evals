@@ -1,0 +1,39 @@
+{
+ "run": "20261020-024130-opus-5.5-xhigh",
+ "task": "takedown-v3",
+ "contestant": "opus-5.5-xhigh",
+ "harness": "claude",
+ "model": "claude-opus-5-5",
+ "effort": "xhigh",
+ "wall_min": 120,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v3",
+ "box": "sl-opus-5-5-xhigh-1020043957",
+ "started": "2026-10-20T02:41:30Z",
+ "seconds": 2444,
+ "elapsed_seconds": 2445,
+ "exit": "143",
+ "timed_out": false,
+ "waited_seconds": 0,
+ "waited_min": 0.0,
+ "resumes": 0,
+ "exit_reason": "agent_error",
+ "segments": [
+  {
+   "segment": 0,
+   "start": 1792464092,
+   "end": 1792466536,
+   "secs": 2444,
+   "exit": "143",
+   "limit": {
+    "limited": false,
+    "reset": null,
+    "kind": "",
+    "message": ""
+   },
+   "waited_secs": 0
+  }
+ ],
+ "finished": "2026-10-20T03:22:21Z"
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BURN LAP</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #000; font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif; }
+  canvas { display: block; }
+  #hud { position: fixed; inset: 0; pointer-events: none; color: #fff; text-transform: uppercase; user-select: none; }
+  .sk { font-style: italic; text-shadow: 0 3px 0 #000, 0 0 12px rgba(0,0,0,.6); }
+  #pos { position: absolute; left: 28px; top: 18px; font-size: 76px; line-height: 1; font-weight: 900; }
+  #pos small { font-size: 34px; }
+  #pos .of { font-size: 30px; opacity: .8; }
+  #lap { position: absolute; left: 32px; top: 104px; font-size: 26px; }
+  #time { position: absolute; left: 32px; top: 136px; font-size: 20px; opacity: .9; }
+  #td { position: absolute; right: 30px; top: 22px; font-size: 26px; text-align: right; }
+  #td b { font-size: 54px; color: #ffcf33; display: block; line-height: 1; }
+  #speedo { position: absolute; right: 34px; bottom: 26px; text-align: right; }
+  #spd { font-size: 92px; line-height: .9; font-weight: 900; }
+  #unit { font-size: 22px; opacity: .85; }
+  #boostWrap { position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%) skewX(-18deg); width: min(560px, 52vw); height: 26px; border: 3px solid #fff; background: rgba(0,0,0,.45); box-shadow: 0 0 0 2px #000; }
+  #boostFill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: linear-gradient(90deg, #ff4d00, #ffb300 60%, #fff27a); }
+  #boostWrap.on #boostFill { background: linear-gradient(90deg, #00b7ff, #7ae9ff 60%, #fff); box-shadow: 0 0 22px #4cd8ff; }
+  #boostWrap.ready { box-shadow: 0 0 0 2px #000, 0 0 16px #ffb300; }
+  #boostMark { position: absolute; left: 25%; top: -6px; bottom: -6px; width: 3px; background: #fff; }
+  #boostLbl { position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%); font-size: 22px; letter-spacing: 3px; }
+  #msgs { position: absolute; left: 0; right: 0; top: 30%; text-align: center; }
+  .card { display: inline-block; font-size: 84px; font-weight: 900; font-style: italic; letter-spacing: 2px; padding: 8px 40px; transform: skewX(-12deg); }
+  .pop { animation: pop 1.3s cubic-bezier(.2,1.6,.4,1) forwards; }
+  @keyframes pop { 0% { transform: skewX(-12deg) scale(3); opacity: 0; } 12% { transform: skewX(-12deg) scale(.9); opacity: 1; } 22% { transform: skewX(-12deg) scale(1.05);} 80% { transform: skewX(-12deg) scale(1); opacity: 1; } 100% { transform: skewX(-12deg) scale(1.1) translateY(-30px); opacity: 0; } }
+  #tdcard { position: absolute; left: 0; right: 0; top: 24%; text-align: center; display: none; }
+  #tdcard .card { background: linear-gradient(90deg, #c4001a, #ff2a2a); color: #fff; border: 5px solid #ffd23f; font-size: 96px; box-shadow: 0 0 40px rgba(255,40,40,.7); }
+  #tdcard .sub { font-size: 30px; color: #ffd23f; margin-top: 10px; }
+  #tdcard.go { display: block; animation: tdin 1.6s ease-out forwards; }
+  @keyframes tdin { 0% { transform: scale(4) rotate(-8deg); opacity: 0; filter: blur(8px);} 10% { transform: scale(.92) rotate(2deg); opacity: 1; filter: none;} 18% { transform: scale(1.06) rotate(0);} 26% { transform: scale(1);} 82% { opacity: 1; transform: scale(1);} 100% { opacity: 0; transform: scale(1.4) translateX(60vw);} }
+  #drift { position: absolute; left: 50%; top: 62%; transform: translateX(-50%); font-size: 40px; color: #7ae9ff; display: none; }
+  #drift.on { display: block; animation: wob .25s infinite alternate; }
+  @keyframes wob { from { transform: translateX(-50%) skewX(-14deg) scale(1);} to { transform: translateX(-50%) skewX(-14deg) scale(1.06);} }
+  #result { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; flex-direction: column; background: radial-gradient(ellipse at center, rgba(0,0,0,.35), rgba(0,0,0,.8)); }
+  #result.on { display: flex; }
+  #result h1 { font-size: 120px; margin: 0; font-style: italic; color: #ffd23f; text-shadow: 0 6px 0 #000; }
+  #result p { font-size: 28px; margin: 8px; }
+  #result .r { margin-top: 30px; font-size: 34px; animation: blink 1s infinite; }
+  @keyframes blink { 50% { opacity: .35; } }
+  #help { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); font-size: 14px; opacity: .75; font-family: Arial, sans-serif; font-style: normal; text-transform: none; letter-spacing: .5px; transition: opacity 1s; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+  #prog { position: absolute; left: 32px; top: 168px; width: 220px; height: 6px; background: rgba(255,255,255,.25); }
+  #progFill { position: absolute; left: 0; top: 0; bottom: 0; background: #fff; width: 0; }
+</style>
+  <script type="module" crossorigin src="./assets/index-BJMS5dL_.js"></script>
+</head>
+<body>
+<div id="hud">
+  <div id="pos" class="sk">1<small>st</small><span class="of"> / 8</span></div>
+  <div id="lap" class="sk">Lap 1 / 3</div>
+  <div id="time" class="sk">0:00.00</div>
+  <div id="prog"><div id="progFill"></div></div>
+  <div id="td" class="sk">Takedowns<b>0</b></div>
+  <div id="speedo" class="sk"><div id="spd">0</div><div id="unit">km/h</div></div>
+  <div id="boostLbl" class="sk">Boost</div>
+  <div id="boostWrap"><div id="boostFill"></div><div id="boostMark"></div></div>
+  <div id="drift" class="sk">Drift!</div>
+  <div id="msgs"></div>
+  <div id="tdcard"><div class="card">TAKEDOWN!</div><div class="sub sk"></div></div>
+  <div id="help">W/↑ gas · S/↓ brake/reverse · A D / ← → steer · SHIFT drift · SPACE boost · R restart</div>
+  <div id="flash"></div>
+  <div id="result"><h1>1st</h1><p class="t"></p><p class="b"></p><p class="k"></p><div class="r sk">Press R to restart</div></div>
+</div>
+</body>
+</html>
