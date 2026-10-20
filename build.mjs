@@ -1,4 +1,5 @@
-// Builds the static site into public/ from runs/, tasks/, contestants.json and ratings.json.
+// Builds the static site into public/ from runs/, tasks/, contestants.json, ratings.json and harness-failures.json
+// (runs that failed because of the benchmark harness: listed under the leaderboard, not ranked or playable).
 // No dependencies: node build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
@@ -17,6 +18,7 @@ const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 const contestants = Object.fromEntries(json(path.join(ROOT, 'contestants.json'), []).map((c) => [c.id, c]));
 const ratings = json(path.join(ROOT, 'ratings.json'), {});
+const failures = json(path.join(ROOT, 'harness-failures.json'), {});
 const label = (id) => contestants[id]?.label ?? id;
 
 // Copy one game build to public/play/<slug>/ and make it work under that path. Vite builds with base "/"
@@ -71,7 +73,7 @@ function loadRun(task, name) {
 const tasks = fs.readdirSync(path.join(ROOT, 'runs')).filter((t) => fs.statSync(path.join(ROOT, 'runs', t)).isDirectory())
   .map((t) => {
     const runs = fs.readdirSync(path.join(ROOT, 'runs', t)).filter((r) => fs.existsSync(path.join(ROOT, 'runs', t, r, 'score.json')));
-    return { id: t, runs: runs.map((r) => r) };
+    return { id: t, runs: runs.filter((r) => !failures[r]), failed: runs.filter((r) => failures[r]) };
   })
   .filter((t) => t.runs.length)
   .sort((a, b) => Math.max(...b.runs.map((r) => +r.slice(0, 8))) - Math.max(...a.runs.map((r) => +r.slice(0, 8))));
@@ -197,6 +199,7 @@ ${t.runs[0].preview ? `<meta property="og:image" content="${t.runs[0].preview}">
   <section id="leaderboard">
     <div class="sechead"><h2>Leaderboard</h2><span class="dim">${esc(t.id)} · keyboard needed to play</span></div>
     ${table(t)}
+    ${t.failed.length ? `<p class="note dim">Harness failures, not counted: ${t.failed.map((r) => `${esc(label(json(path.join(ROOT, 'runs', t.id, r, 'meta.json'), {}).contestant ?? r))} (${esc(r)}): ${esc(failures[r])}`).join(' · ')}</p>` : ''}
   </section>
 
   <section id="games">

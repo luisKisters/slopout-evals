@@ -1,0 +1,3 @@
+{
+ "20261020-024130-opus-5.5-xhigh": "the brief was in the Claude CLI's command line, so the agent's `ps aux | grep \"vite build --watch\" | xargs kill` also killed its own CLI after 41 min. Re-run with the brief on stdin."
+}
