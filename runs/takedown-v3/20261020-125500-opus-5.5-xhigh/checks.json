@@ -1,0 +1,69 @@
+{
+  "checks": {
+    "loads": {
+      "status": "pass",
+      "pass": true,
+      "detail": "canvas 1280x720"
+    },
+    "noConsoleErrors": {
+      "status": "pass",
+      "pass": true,
+      "detail": []
+    },
+    "rendersImage": {
+      "status": "pass",
+      "pass": true,
+      "detail": "mean 87.5 std 72.1"
+    },
+    "gasMovesForward": {
+      "status": "pass",
+      "pass": true,
+      "detail": "player car (Group) moves forward; energy 27 vs idle 12.12, zoom 0.02"
+    },
+    "steerLeftRight": {
+      "status": "pass",
+      "pass": true,
+      "detail": "player car (Group): yaw rate change none measurable; pixels: left shift 6.67, right shift -7.6"
+    },
+    "reverse": {
+      "status": "pass",
+      "pass": true,
+      "detail": "player car (Group) moves backward; zoom 0.37, energy 7.34"
+    },
+    "fps30": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "not measured: software GL on a CPU box (virtual clock, 272 ms CPU per frame)"
+    },
+    "noAutoSteer": {
+      "status": "fail",
+      "pass": false,
+      "detail": "auto-steer or lane keeping: player car (Group): turned up to 46.1° in 14.4 s of gas only, then end of window"
+    },
+    "boostNoFlicker": {
+      "status": "pass",
+      "pass": true,
+      "detail": "fov 80.8-96.9° with 1 direction changes in 3 s of space on an empty bar"
+    },
+    "shiftDrift": {
+      "status": "pass",
+      "pass": true,
+      "detail": "player car (Group): slip 22.4° with shift vs 5.2° without; yaw 155.6° vs 66°"
+    },
+    "rivalSpawn": {
+      "status": "pass",
+      "pass": true,
+      "detail": "3 rivals; furthest ahead -1.66 car lengths (in walls: not measured)"
+    }
+  },
+  "passed": 9,
+  "total": 11,
+  "frameTimeMs": {
+    "p50": 272,
+    "p95": 321,
+    "p99": 351,
+    "samples": 2250,
+    "kind": "cpu ms per frame (software GL, not game fps)"
+  },
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+}

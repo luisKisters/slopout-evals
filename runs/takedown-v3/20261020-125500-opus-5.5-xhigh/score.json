@@ -1,0 +1,129 @@
+{
+ "contestant": "opus-5.5-xhigh",
+ "run": "20261020-125500-opus-5.5-xhigh",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true,
+  "noAutoSteer": false,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "pass",
+  "reverse": "pass",
+  "fps30": "unknown",
+  "noAutoSteer": "fail",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "pass",
+  "rivalSpawn": "pass"
+ },
+ "parts": {
+  "feel": 3.33,
+  "takedown": 6.67,
+  "looks": 6.0,
+  "hud": 8.0,
+  "trailer": 8.0
+ },
+ "raw": 5.7,
+ "score": 3.0,
+ "judges": [
+  "sonnet-5.5-xhigh",
+  "gpt-6.1-sol-xhigh",
+  "minimax-m3.1-flash-free"
+ ],
+ "votes": {
+  "sonnet-5.5-xhigh": {
+   "feel": 4,
+   "takedown": 7,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong speed sense: boost blur, FOV push, a 300 km/h readout and a flame trail",
+    "Burnout-style HUD: big position, boost bar with colour change, takedown counter, DRIFT text and a TAKEDOWN! card",
+    "The track mixes a city, a coastal cliff and a tunnel, and the trailer shows takedowns, drift and boost"
+   ],
+   "bad": [
+    "The automatic check failed on auto-steer. W-only driving still ended in crashes and walls, and the steering tests mostly produced CRASHED screens, so the car is hard to control",
+    "Frequent crashes: the car flips at about 10 km/h and respawns again and again, which hurts fun. The player sat in 8th for most of the run",
+    "The art is low-poly and blocky: the city is a wall of flat windowed boxes, and the cars and scenery look basic"
+   ],
+   "one_line": "It looks fast and the HUD and takedown card are punchy, but the car flips over too easily and the low-poly world feels cheap, so it's a flashy but crash-heavy Burnout knockoff."
+  },
+  "gpt-6.1-sol-xhigh": {
+   "feel": 3,
+   "takedown": 6,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Boost flames, blur and drift smoke communicate speed.",
+    "City, coastal bends and a lit tunnel provide variety.",
+    "Readable HUD and bold takedown cards capture Burnout's style."
+   ],
+   "bad": [
+    "Confirmed auto-steer undermines driving through bends.",
+    "Repeated rollovers interrupt ordinary steering inputs.",
+    "Repetitive buildings and angular scenery limit visual quality."
+   ],
+   "one_line": "The boost and takedown presentation look fun, but automatic cornering and constant flipping spoil the driving."
+  },
+  "minimax-m3.1-flash-free": {
+   "feel": 3,
+   "takedown": 7,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Burnout-style HUD is strong: position 8TH/8, lap+time, takedowns, big speed readout, segmented boost bar, minimap, DRIFT/+BOOST/CRASHED callouts",
+    "Trailer shows the game well: grid start with rivals, red TAKEDOWN! x3 card, 300+ km/h boost flames, drift smoke, tunnel and coastal sections",
+    "Track has variety (city grid, cliff/coast, tunnel) with wide two-lane road, chevrons, guardrails and no traffic"
+   ],
+   "bad": [
+    "Auto-steer: the car follows the road's bends with only W held (check fail) - player never has to steer, brief violated",
+    "Walls are lethal at walking speed: repeated low-speed flips (8-11 km/h) with CRASHED, so the scripted drive never finishes lap 1 and stays 8th",
+    "Flat low-poly art with no visible shadows, motion blur or speed effects; scenery is simple cones and flat planes"
+   ],
+   "one_line": "Solid low-poly racer with a genuinely Burnout-like HUD and a good trailer, but the car steers itself through the bends and flips over every time it grazes a wall."
+  }
+ }
+}
