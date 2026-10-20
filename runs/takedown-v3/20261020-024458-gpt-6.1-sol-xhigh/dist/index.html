@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#122b30" />
+    <link rel="icon" href="./favicon.svg" />
+    <title>BREAKWATER — Coastline clash</title>
+    <meta
+      name="description"
+      content="A sunset, full-contact arcade race. Three laps. Eight drivers. One way to the front."
+    />
+    <script type="module" crossorigin src="./assets/index-Cfpz2yAt.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-D955sQ62.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-D0LOuXZT.css">
+  </head>
+  <body>
+    <canvas id="game" aria-label="Breakwater 3D racing game"></canvas>
+    <div id="vignette"></div>
+    <div id="boost-wash"></div>
+    <div id="speed-lines"></div>
+    <div id="hud">
+      <header>
+        <div class="wordmark">
+          <i>///</i> BREAKWATER<span>COASTLINE CLASH</span>
+        </div>
+        <div class="race-info">
+          <div>
+            <small>POSITION</small
+            ><strong id="position">1<span> / 8</span></strong>
+          </div>
+          <b class="divider"></b>
+          <div>
+            <small>LAP</small><strong id="lap">1<span> / 3</span></strong>
+          </div>
+          <b class="divider"></b>
+          <div class="td">
+            <small>TAKEDOWNS</small><strong id="takedowns">00</strong>
+          </div>
+        </div>
+      </header>
+      <div class="route">
+        <div class="live-dot"></div>
+        <span id="sector">01 / SUNSET BOULEVARD</span
+        ><span class="race-clock" id="time">00:00.00</span>
+      </div>
+      <div id="event" class="event">
+        <div id="event-kicker">FULL CONTACT</div>
+        <strong id="event-title">TAKEDOWN!</strong
+        ><span id="event-sub">+40% BOOST</span>
+      </div>
+      <div id="drift-indicator">
+        <span class="drift-glyph">≋</span><b>DRIFT</b
+        ><span id="drift-points">+0 BOOST</span>
+      </div>
+      <div id="crash-card">
+        <small>GET BACK IN IT</small><strong>CRASHED</strong
+        ><span>Recovering…</span>
+      </div>
+      <div class="map-panel">
+        <canvas id="minimap" width="220" height="160"></canvas>
+        <div class="map-label">
+          <span class="live-dot"></span> BREAKWATER ISLAND <b>4.8 KM</b>
+        </div>
+      </div>
+      <div id="bend">
+        <span id="bend-arrow">↑</span>
+        <div><small>COMING UP</small><b id="bend-name">OPEN IT UP</b></div>
+      </div>
+      <div class="speed-panel">
+        <div class="speed-readout">
+          <div>
+            <small id="drive-state">SPEED / KM/H</small
+            ><strong id="speed">000</strong>
+          </div>
+          <span id="gear">3</span>
+        </div>
+        <div class="speed-ticks"></div>
+        <div class="boost-label">
+          <b><span class="bolt">ϟ</span> BOOST</b
+          ><span id="boost-text">SPACE TO BURN</span>
+        </div>
+        <div class="boost-bar">
+          <div id="boost-fill"></div>
+          <i></i><i></i><i></i>
+        </div>
+        <div class="boost-caption">
+          <span>DRIVE DANGEROUSLY. EARN YOUR BOOST.</span
+          ><b id="boost-percent">50%</b>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <kbd>W</kbd><kbd>S</kbd><span>GAS / BRAKE</span><kbd>A</kbd
+          ><kbd>D</kbd><kbd>←</kbd><kbd>→</kbd><span>STEER</span><kbd>SHIFT</kbd
+          ><span>DRIFT</span><kbd>SPACE</kbd><span>BOOST</span>
+        </div>
+        <button id="sound" aria-label="Toggle sound">
+          ◖♪ <span>SOUND ON</span>
+        </button>
+      </footer>
+      <div id="intro">
+        <b>NO BRAKES. NO FRIENDS.</b
+        ><span>3 LAPS · 8 DRIVERS · ONE WINNER</span>
+        <p>Hold <kbd>W</kbd> to accelerate. Make some enemies.</p>
+      </div>
+      <div id="result">
+        <div class="result-tag">COASTLINE CLASH / RACE COMPLETE</div>
+        <h1 id="result-title">YOU OWN<br />THE COAST.</h1>
+        <div class="result-stats">
+          <div><small>FINISH</small><b id="result-position">1ST</b></div>
+          <div><small>TIME</small><b id="result-time">03:42</b></div>
+          <div><small>TAKEDOWNS</small><b id="result-td">04</b></div>
+        </div>
+        <p>PRESS <kbd>R</kbd> TO RESTART</p>
+      </div>
+    </div>
+  </body>
+</html>

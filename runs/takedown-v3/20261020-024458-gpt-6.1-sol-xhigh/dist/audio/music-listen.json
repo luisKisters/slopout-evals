@@ -1,0 +1,432 @@
+{
+ "path": "public/audio/music.ogg",
+ "start": 0.0,
+ "end": 8.0,
+ "duration": 8.0,
+ "measurements": {
+  "duration": 8.0,
+  "peak_dbfs": -3.7,
+  "true_peak_dbtp": -3.5,
+  "rms_dbfs": -19.3,
+  "lufs": -18.1,
+  "lra_lu": 0.6,
+  "attack_ms": 0.0,
+  "decay_ms": 349.0,
+  "brightness_hz": 2545,
+  "bandwidth_hz": 20480,
+  "noise_floor_dbfs": -36.2,
+  "flatness": 0.0212,
+  "harmonic_ratio": 0.134,
+  "onset_count": 39,
+  "onsets_per_s": 4.88,
+  "width": "side/mid -28 dB",
+  "digital_silence_frac": 0.0384
+ },
+ "shape": "busy, 4.9 onsets/s (attack 0 ms, decays in 349 ms)",
+ "top_tags": [
+  {
+   "term": "a busy cafe",
+   "category": "ambience",
+   "z": 2.24,
+   "cosine": 0.018,
+   "verdict": "weak"
+  },
+  {
+   "term": "a kick drum",
+   "category": "impacts",
+   "z": 1.81,
+   "cosine": 0.078,
+   "verdict": "no match"
+  },
+  {
+   "term": "a police siren",
+   "category": "everyday",
+   "z": 1.75,
+   "cosine": 0.052,
+   "verdict": "no match"
+  },
+  {
+   "term": "people talking in the background",
+   "category": "ambience",
+   "z": 1.57,
+   "cosine": -0.046,
+   "verdict": "no match"
+  },
+  {
+   "term": "an alarm clock beeping",
+   "category": "everyday",
+   "z": 1.51,
+   "cosine": 0.064,
+   "verdict": "no match"
+  },
+  {
+   "term": "a knock on a door",
+   "category": "everyday",
+   "z": 1.35,
+   "cosine": 0.029,
+   "verdict": "no match"
+  },
+  {
+   "term": "a crowd cheering",
+   "category": "ambience",
+   "z": 1.26,
+   "cosine": -0.011,
+   "verdict": "no match"
+  },
+  {
+   "term": "a clock ticking",
+   "category": "everyday",
+   "z": 1.13,
+   "cosine": 0.059,
+   "verdict": "no match"
+  }
+ ],
+ "music_hints": [
+  {
+   "term": "chiptune video game music",
+   "category": "music_genre",
+   "z": 3.05,
+   "cosine": 0.243
+  },
+  {
+   "term": "a punchy kick drum pattern",
+   "category": "instruments",
+   "z": 3.04,
+   "cosine": 0.143
+  },
+  {
+   "term": "celebratory and joyful music",
+   "category": "music_mood",
+   "z": 2.83,
+   "cosine": 0.203
+  },
+  {
+   "term": "playful and quirky music",
+   "category": "music_mood",
+   "z": 2.49,
+   "cosine": 0.224
+  },
+  {
+   "term": "hip hop beat with heavy bass",
+   "category": "music_genre",
+   "z": 2.27,
+   "cosine": 0.13
+  },
+  {
+   "term": "confident and cool music",
+   "category": "music_mood",
+   "z": 2.21,
+   "cosine": 0.195
+  },
+  {
+   "term": "drum and bass music",
+   "category": "music_genre",
+   "z": 2.17,
+   "cosine": 0.126
+  },
+  {
+   "term": "a man shouting",
+   "category": "voice",
+   "z": 2.03,
+   "cosine": -0.011
+  }
+ ],
+ "tags": {
+  "transitions": [
+   {
+    "term": "a stutter glitch transition",
+    "z": 0.13,
+    "cosine": 0.039
+   },
+   {
+    "term": "a gust of wind rushing past",
+    "z": -0.63,
+    "cosine": -0.086
+   },
+   {
+    "term": "an uplifter sweep",
+    "z": -0.74,
+    "cosine": -0.055
+   }
+  ],
+  "impacts": [
+   {
+    "term": "a kick drum",
+    "z": 1.81,
+    "cosine": 0.078
+   },
+   {
+    "term": "a sub bass drop",
+    "z": 0.76,
+    "cosine": 0.025
+   },
+   {
+    "term": "a wooden knock",
+    "z": 0.45,
+    "cosine": -0.002
+   }
+  ],
+  "ui": [
+   {
+    "term": "a success chime",
+    "z": 1.13,
+    "cosine": 0.119
+   },
+   {
+    "term": "a notification ding",
+    "z": 1.04,
+    "cosine": 0.068
+   },
+   {
+    "term": "an error buzz",
+    "z": 0.93,
+    "cosine": 0.03
+   }
+  ],
+  "keyboard": [
+   {
+    "term": "a soft key release click",
+    "z": 0.89,
+    "cosine": 0.039
+   },
+   {
+    "term": "a clicky mechanical keyboard",
+    "z": 0.26,
+    "cosine": 0.016
+   },
+   {
+    "term": "a keyboard typing fast",
+    "z": 0.17,
+    "cosine": 0.008
+   }
+  ],
+  "foley": [
+   {
+    "term": "footsteps on gravel",
+    "z": 0.88,
+    "cosine": -0.05
+   },
+   {
+    "term": "glass clinking",
+    "z": 0.8,
+    "cosine": -0.001
+   },
+   {
+    "term": "a drawer closing",
+    "z": 0.75,
+    "cosine": 0.061
+   }
+  ],
+  "water": [
+   {
+    "term": "a liquid bloop",
+    "z": 0.95,
+    "cosine": 0.085
+   },
+   {
+    "term": "a dripping tap",
+    "z": 0.7,
+    "cosine": 0.052
+   },
+   {
+    "term": "a water drop",
+    "z": 0.63,
+    "cosine": 0.072
+   }
+  ],
+  "nature": [
+   {
+    "term": "a horse galloping",
+    "z": 1.07,
+    "cosine": 0.028
+   },
+   {
+    "term": "footsteps on grass",
+    "z": 0.25,
+    "cosine": -0.056
+   },
+   {
+    "term": "a bird flapping its wings",
+    "z": 0.17,
+    "cosine": -0.049
+   }
+  ],
+  "chimes": [
+   {
+    "term": "a glass ting",
+    "z": 0.82,
+    "cosine": 0.06
+   },
+   {
+    "term": "a kalimba note",
+    "z": 0.62,
+    "cosine": 0.034
+   },
+   {
+    "term": "a music box melody",
+    "z": -0.04,
+    "cosine": 0.009
+   }
+  ],
+  "ambience": [
+   {
+    "term": "a busy cafe",
+    "z": 2.24,
+    "cosine": 0.018
+   },
+   {
+    "term": "people talking in the background",
+    "z": 1.57,
+    "cosine": -0.046
+   },
+   {
+    "term": "a crowd cheering",
+    "z": 1.26,
+    "cosine": -0.011
+   }
+  ],
+  "everyday": [
+   {
+    "term": "a police siren",
+    "z": 1.75,
+    "cosine": 0.052
+   },
+   {
+    "term": "an alarm clock beeping",
+    "z": 1.51,
+    "cosine": 0.064
+   },
+   {
+    "term": "a knock on a door",
+    "z": 1.35,
+    "cosine": 0.029
+   }
+  ],
+  "music_genre": [
+   {
+    "term": "chiptune video game music",
+    "z": 3.05,
+    "cosine": 0.243
+   },
+   {
+    "term": "hip hop beat with heavy bass",
+    "z": 2.27,
+    "cosine": 0.13
+   },
+   {
+    "term": "drum and bass music",
+    "z": 2.17,
+    "cosine": 0.126
+   }
+  ],
+  "music_mood": [
+   {
+    "term": "celebratory and joyful music",
+    "z": 2.83,
+    "cosine": 0.203
+   },
+   {
+    "term": "playful and quirky music",
+    "z": 2.49,
+    "cosine": 0.224
+   },
+   {
+    "term": "confident and cool music",
+    "z": 2.21,
+    "cosine": 0.195
+   }
+  ],
+  "instruments": [
+   {
+    "term": "a punchy kick drum pattern",
+    "z": 3.04,
+    "cosine": 0.143
+   },
+   {
+    "term": "a plucked synth arpeggio",
+    "z": 1.64,
+    "cosine": 0.161
+   },
+   {
+    "term": "a deep sub bass",
+    "z": 1.47,
+    "cosine": 0.089
+   }
+  ],
+  "voice": [
+   {
+    "term": "a man shouting",
+    "z": 2.03,
+    "cosine": -0.011
+   },
+   {
+    "term": "a crowd talking",
+    "z": 1.97,
+    "cosine": -0.016
+   },
+   {
+    "term": "a baby crying",
+    "z": 1.72,
+    "cosine": 0.033
+   }
+  ],
+  "quality": [
+   {
+    "term": "a loud sound",
+    "z": 1.28,
+    "cosine": 0.02
+   },
+   {
+    "term": "a tight snappy sound",
+    "z": 0.96,
+    "cosine": 0.06
+   },
+   {
+    "term": "a punchy sound",
+    "z": 0.75,
+    "cosine": 0.031
+   }
+  ],
+  "production": [
+   {
+    "term": "a square wave chiptune blip",
+    "z": 2.07,
+    "cosine": 0.123
+   },
+   {
+    "term": "a retro video game sound effect",
+    "z": 0.98,
+    "cosine": 0.069
+   },
+   {
+    "term": "a cheap synthesized beep",
+    "z": 0.84,
+    "cosine": 0.009
+   }
+  ]
+ },
+ "audioset": [
+  {
+   "label": "Music",
+   "p": 0.895
+  },
+  {
+   "label": "Drum machine",
+   "p": 0.395
+  },
+  {
+   "label": "Sampler",
+   "p": 0.182
+  },
+  {
+   "label": "Electronic music",
+   "p": 0.113
+  },
+  {
+   "label": "Techno",
+   "p": 0.079
+  }
+ ],
+ "character": [],
+ "summary": "8.00 s busy, 4.9 onsets/s (attack 0 ms, decays in 349 ms). Music (AudioSet Music 0.89). Unvalidated hints - genre: chiptune video game music (z +3.0), hip hop beat with heavy bass (z +2.2); mood (wrong for ~1 in 5 tracks in a test): celebratory and joyful music (z +2.8), playful and quirky music (z +2.4). Sounds most like: a busy cafe (z +2.2), a kick drum (z +1.8), a police siren (z +1.7) [weak reading]. AudioSet: Music 0.90, Drum machine 0.40, Sampler 0.18. peak -3.7 dBFS, -18.1 LUFS, brightness 2.5 kHz, bandwidth 20.5 kHz, noise floor -36 dBFS, side/mid -28 dB."
+}

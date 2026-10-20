@@ -1,0 +1,97 @@
+{
+ "kit": 1,
+ "earshot": "0.3.0",
+ "bank": "forge_v2r6+fit1+pluck1",
+ "sr": 48000,
+ "name": "Breakwater contact race",
+ "roles": {
+  "hit": {
+   "sound": "impact/metal",
+   "align": "onset",
+   "level_db": -3.0,
+   "max_s": null,
+   "takes": [
+    {
+     "file": "hit_1.wav",
+     "seed": 0,
+     "pitch": null,
+     "onset_s": 0.0,
+     "peak_s": 0.1165,
+     "end_s": 1.182,
+     "dur_s": 1.2,
+     "peak_db": -1.0,
+     "lufs_m_max": -10.95,
+     "sha1": "8a8baadcefde956525b75da57fd3df549dc177ee",
+     "key": "8e08396d316583d9840d30dadc8ba5f627979fe2",
+     "checks": []
+    }
+   ]
+  },
+  "whoosh.long": {
+   "sound": "whoosh_big/jet",
+   "align": "peak",
+   "level_db": -6.0,
+   "max_s": null,
+   "takes": [
+    {
+     "file": "whoosh-long_1.wav",
+     "seed": 748279673,
+     "pitch": null,
+     "onset_s": 0.0772,
+     "peak_s": 0.5445,
+     "end_s": 1.363,
+     "dur_s": 1.6488,
+     "peak_db": -1.0,
+     "lufs_m_max": -11.91,
+     "sha1": "eaf82672db5a37529962545730861e06598ac767",
+     "key": "4a5fe49bcb1cff0a023523a94aa0e7c45a7a7d94",
+     "checks": []
+    }
+   ]
+  },
+  "bell": {
+   "sound": "logo_sting/spark",
+   "align": "onset",
+   "level_db": -3.0,
+   "max_s": null,
+   "takes": [
+    {
+     "file": "bell_1.wav",
+     "seed": 0,
+     "pitch": null,
+     "onset_s": 0.0,
+     "peak_s": 0.0105,
+     "end_s": 1.459,
+     "dur_s": 1.84,
+     "peak_db": -1.0,
+     "lufs_m_max": -11.12,
+     "sha1": "c90740c04165f92dae8863a625143e04ad4869ca",
+     "key": "ad5b15edbb1398de1733f7943267b4312f2d2a46",
+     "checks": []
+    }
+   ]
+  },
+  "whoosh.short": {
+   "sound": "whoosh_fast/tight",
+   "align": "onset",
+   "level_db": -8.0,
+   "max_s": null,
+   "takes": [
+    {
+     "file": "whoosh-short_1.wav",
+     "seed": 1621782255,
+     "pitch": null,
+     "onset_s": 0.0485,
+     "peak_s": 0.1615,
+     "end_s": 0.365,
+     "dur_s": 0.5364,
+     "peak_db": -1.0,
+     "lufs_m_max": -16.68,
+     "sha1": "55e9c3b3a2221fad4d84bff6edd1954f8aa7a085",
+     "key": "11acd882686d1a25eafb31a133777f57da5d2dc3",
+     "checks": []
+    }
+   ]
+  }
+ }
+}

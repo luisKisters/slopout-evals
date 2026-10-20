@@ -1,0 +1,428 @@
+{
+ "path": "public/audio/audition.wav",
+ "start": null,
+ "end": null,
+ "duration": 9.625,
+ "measurements": {
+  "duration": 9.625,
+  "peak_dbfs": -4.0,
+  "true_peak_dbtp": -4.0,
+  "rms_dbfs": -26.4,
+  "lufs": -19.1,
+  "lra_lu": 12.1,
+  "attack_ms": 12.0,
+  "decay_ms": 1028.0,
+  "brightness_hz": 1660,
+  "bandwidth_hz": 20480,
+  "noise_floor_dbfs": -200.0,
+  "flatness": 0.0013,
+  "harmonic_ratio": 0.607,
+  "onset_count": 5,
+  "onsets_per_s": 0.52,
+  "width": "side/mid -8 dB",
+  "digital_silence_frac": 0.4624
+ },
+ "shape": "5 separate events (attack 12 ms, decays in 1028 ms)",
+ "top_tags": [
+  {
+   "term": "a cinematic hit with a long tail",
+   "category": "impacts",
+   "z": 3.25,
+   "cosine": 0.28,
+   "verdict": "strong"
+  },
+  {
+   "term": "a fast whoosh",
+   "category": "transitions",
+   "z": 2.95,
+   "cosine": 0.291,
+   "verdict": "plausible"
+  },
+  {
+   "term": "a notification ding",
+   "category": "ui",
+   "z": 2.45,
+   "cosine": 0.276,
+   "verdict": "weak"
+  },
+  {
+   "term": "a whip pan transition",
+   "category": "transitions",
+   "z": 2.44,
+   "cosine": 0.305,
+   "verdict": "weak"
+  },
+  {
+   "term": "a swoosh passing by",
+   "category": "transitions",
+   "z": 2.39,
+   "cosine": 0.244,
+   "verdict": "weak"
+  },
+  {
+   "term": "a sword being drawn",
+   "category": "everyday",
+   "z": 2.28,
+   "cosine": 0.216,
+   "verdict": "weak"
+  },
+  {
+   "term": "a downlifter falling sweep",
+   "category": "transitions",
+   "z": 2.05,
+   "cosine": 0.238,
+   "verdict": "weak"
+  },
+  {
+   "term": "a short swish",
+   "category": "transitions",
+   "z": 1.97,
+   "cosine": 0.265,
+   "verdict": "no match"
+  }
+ ],
+ "music_hints": [
+  {
+   "term": "epic trailer music",
+   "category": "music_genre",
+   "z": 2.19,
+   "cosine": 0.295
+  },
+  {
+   "term": "suspenseful build-up music",
+   "category": "music_mood",
+   "z": 1.64,
+   "cosine": 0.249
+  },
+  {
+   "term": "orchestral percussion",
+   "category": "instruments",
+   "z": 1.64,
+   "cosine": 0.235
+  },
+  {
+   "term": "energetic and driving music",
+   "category": "music_mood",
+   "z": 1.38,
+   "cosine": 0.199
+  },
+  {
+   "term": "playful children's piano music",
+   "category": "music_genre",
+   "z": 1.27,
+   "cosine": 0.206
+  },
+  {
+   "term": "aggressive music",
+   "category": "music_mood",
+   "z": 1.11,
+   "cosine": 0.173
+  },
+  {
+   "term": "dubstep music",
+   "category": "music_genre",
+   "z": 1.09,
+   "cosine": 0.18
+  },
+  {
+   "term": "upbeat corporate pop music",
+   "category": "music_genre",
+   "z": 1.07,
+   "cosine": 0.238
+  }
+ ],
+ "tags": {
+  "transitions": [
+   {
+    "term": "a fast whoosh",
+    "z": 2.95,
+    "cosine": 0.291
+   },
+   {
+    "term": "a whip pan transition",
+    "z": 2.44,
+    "cosine": 0.305
+   },
+   {
+    "term": "a swoosh passing by",
+    "z": 2.39,
+    "cosine": 0.244
+   }
+  ],
+  "impacts": [
+   {
+    "term": "a cinematic hit with a long tail",
+    "z": 3.25,
+    "cosine": 0.28
+   },
+   {
+    "term": "a gunshot",
+    "z": 1.87,
+    "cosine": 0.197
+   },
+   {
+    "term": "a metallic clang",
+    "z": 1.71,
+    "cosine": 0.18
+   }
+  ],
+  "ui": [
+   {
+    "term": "a notification ding",
+    "z": 2.45,
+    "cosine": 0.276
+   },
+   {
+    "term": "a success chime",
+    "z": 1.9,
+    "cosine": 0.275
+   },
+   {
+    "term": "a crisp interface click",
+    "z": 1.63,
+    "cosine": 0.246
+   }
+  ],
+  "keyboard": [
+   {
+    "term": "an old typewriter",
+    "z": 0.37,
+    "cosine": 0.086
+   },
+   {
+    "term": "an enter key press",
+    "z": 0.37,
+    "cosine": 0.161
+   },
+   {
+    "term": "a spacebar press",
+    "z": -0.03,
+    "cosine": 0.114
+   }
+  ],
+  "foley": [
+   {
+    "term": "a mouth pop",
+    "z": 1.57,
+    "cosine": 0.223
+   },
+   {
+    "term": "a cork pop",
+    "z": 1.15,
+    "cosine": 0.203
+   },
+   {
+    "term": "a suction cup pop",
+    "z": 1.13,
+    "cosine": 0.206
+   }
+  ],
+  "water": [
+   {
+    "term": "an object plunging into water",
+    "z": 0.9,
+    "cosine": 0.149
+   },
+   {
+    "term": "a liquid bloop",
+    "z": 0.68,
+    "cosine": 0.155
+   },
+   {
+    "term": "a waterfall",
+    "z": 0.24,
+    "cosine": 0.104
+   }
+  ],
+  "nature": [
+   {
+    "term": "something falling into bushes",
+    "z": 0.5,
+    "cosine": 0.092
+   },
+   {
+    "term": "digging in soil",
+    "z": -0.04,
+    "cosine": -0.011
+   },
+   {
+    "term": "a branch snapping",
+    "z": -0.28,
+    "cosine": 0.044
+   }
+  ],
+  "chimes": [
+   {
+    "term": "a magic sparkle chime",
+    "z": 1.46,
+    "cosine": 0.231
+   },
+   {
+    "term": "a triangle hit",
+    "z": 1.27,
+    "cosine": 0.126
+   },
+   {
+    "term": "a glass ting",
+    "z": 1.26,
+    "cosine": 0.187
+   }
+  ],
+  "ambience": [
+   {
+    "term": "ocean waves",
+    "z": 0.24,
+    "cosine": 0.117
+   },
+   {
+    "term": "a busy cafe",
+    "z": -0.3,
+    "cosine": -0.088
+   },
+   {
+    "term": "a dog barking",
+    "z": -0.43,
+    "cosine": -0.041
+   }
+  ],
+  "everyday": [
+   {
+    "term": "a sword being drawn",
+    "z": 2.28,
+    "cosine": 0.216
+   },
+   {
+    "term": "a bicycle bell",
+    "z": 1.65,
+    "cosine": 0.181
+   },
+   {
+    "term": "a cash register",
+    "z": 1.37,
+    "cosine": 0.167
+   }
+  ],
+  "music_genre": [
+   {
+    "term": "epic trailer music",
+    "z": 2.19,
+    "cosine": 0.295
+   },
+   {
+    "term": "playful children's piano music",
+    "z": 1.27,
+    "cosine": 0.206
+   },
+   {
+    "term": "dubstep music",
+    "z": 1.09,
+    "cosine": 0.18
+   }
+  ],
+  "music_mood": [
+   {
+    "term": "suspenseful build-up music",
+    "z": 1.64,
+    "cosine": 0.249
+   },
+   {
+    "term": "energetic and driving music",
+    "z": 1.38,
+    "cosine": 0.199
+   },
+   {
+    "term": "aggressive music",
+    "z": 1.11,
+    "cosine": 0.173
+   }
+  ],
+  "instruments": [
+   {
+    "term": "orchestral percussion",
+    "z": 1.64,
+    "cosine": 0.235
+   },
+   {
+    "term": "crisp hi-hats",
+    "z": 1.02,
+    "cosine": 0.152
+   },
+   {
+    "term": "a glockenspiel",
+    "z": 1.01,
+    "cosine": 0.23
+   }
+  ],
+  "voice": [
+   {
+    "term": "a man shouting",
+    "z": 0.33,
+    "cosine": -0.05
+   },
+   {
+    "term": "children laughing",
+    "z": 0.17,
+    "cosine": -0.033
+   },
+   {
+    "term": "a baby crying",
+    "z": -0.04,
+    "cosine": -0.013
+   }
+  ],
+  "quality": [
+   {
+    "term": "a satisfying sound",
+    "z": 1.9,
+    "cosine": 0.276
+   },
+   {
+    "term": "a punchy sound",
+    "z": 1.63,
+    "cosine": 0.192
+   },
+   {
+    "term": "a bright sound",
+    "z": 1.43,
+    "cosine": 0.212
+   }
+  ],
+  "production": [
+   {
+    "term": "an 8-bit sound effect",
+    "z": 1.57,
+    "cosine": 0.205
+   },
+   {
+    "term": "a square wave chiptune blip",
+    "z": 1.55,
+    "cosine": 0.181
+   },
+   {
+    "term": "a retro video game sound effect",
+    "z": 1.46,
+    "cosine": 0.201
+   }
+  ]
+ },
+ "audioset": [
+  {
+   "label": "Ding",
+   "p": 0.635
+  },
+  {
+   "label": "Whoosh, swoosh, swish",
+   "p": 0.513
+  },
+  {
+   "label": "Clang",
+   "p": 0.211
+  },
+  {
+   "label": "Sound effect",
+   "p": 0.09
+  }
+ ],
+ "character": [],
+ "summary": "9.63 s 5 separate events (attack 12 ms, decays in 1028 ms). Sounds most like: a cinematic hit with a long tail (z +3.2), a fast whoosh (z +2.9), a notification ding (z +2.4) [clear reading]. Other readings: a sword being drawn (everyday, z +2.2). AudioSet: Ding 0.64, Whoosh, swoosh, swish 0.51, Clang 0.21. peak -4.0 dBFS, -19.1 LUFS, brightness 1.7 kHz, bandwidth 20.5 kHz, digital silence between sounds, side/mid -8 dB."
+}

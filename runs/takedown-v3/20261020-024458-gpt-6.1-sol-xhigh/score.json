@@ -1,0 +1,129 @@
+{
+ "contestant": "gpt-6.1-sol-xhigh",
+ "run": "20261020-024458-gpt-6.1-sol-xhigh",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": false,
+  "noAutoSteer": false,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "fail",
+  "reverse": "pass",
+  "fps30": "unknown",
+  "noAutoSteer": "fail",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "unknown",
+  "rivalSpawn": "unknown"
+ },
+ "parts": {
+  "feel": 3.67,
+  "takedown": 6.0,
+  "looks": 6.33,
+  "hud": 7.67,
+  "trailer": 7.67
+ },
+ "raw": 5.67,
+ "score": 3.0,
+ "judges": [
+  "opus-5.5-xhigh",
+  "sonnet-5.5-xhigh",
+  "minimax-m3.1-flash-free"
+ ],
+ "votes": {
+  "opus-5.5-xhigh": {
+   "feel": 3,
+   "takedown": 6,
+   "looks": 6,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Varied track: city boulevard, cliffs with pyramids, a tunnel and a red suspension bridge",
+    "Clean Burnout-style HUD: big speed number, boost bar, position, lap, takedowns, minimap and upcoming-turn hints",
+    "Trailer shows a TAKEDOWN! card, a drift, boost at over 300 km/h and first place"
+   ],
+   "bad": [
+    "The automatic checks failed steering and no-auto-steer: with only W held, the car follows the bends",
+    "Many crashes against walls during the scripted drive, and the scripted run drops to 8th and stays there",
+    "Low-poly flat look with blocky rival cars; speed sense comes mostly from the number on the HUD"
+   ],
+   "one_line": "Nice-looking stylized coastal circuit with a slick HUD and a working takedown card, but the car seems to steer itself and the steering checks failed, so it doesn't feel like you're really driving."
+  },
+  "sonnet-5.5-xhigh": {
+   "feel": 5,
+   "takedown": 6,
+   "looks": 7,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": null,
+    "right": null
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong stylized world: city, cliffs, tunnel and bridge, warm lighting, and a clear Burnout-style HUD with a minimap",
+    "The trailer shows a TAKEDOWN! card, a drift label, boost at 300+ km/h and a clean podium run to 1st",
+    "Rivals start on a grid around the player, and the road has real bends with corner callouts"
+   ],
+   "bad": [
+    "Holding only W makes the car drift off the road and hit the wall (CRASHED at 162 and then 26), so there is no auto-steer, but the crashes are frequent and not forgiving",
+    "Steering is hard to read: A and D show crashes and scrapes, and the car looks mostly straight with little body roll or sense of turning",
+    "The player car is a small boxy teal hatchback and the rivals are low-poly. Speed lines and blur are weak, and the camera sits far back, so the car looks small"
+   ],
+   "one_line": "It looks good with a nice city-to-bridge track and a punchy HUD, but the car crashes into walls too often and the steering feels vague."
+  },
+  "minimax-m3.1-flash-free": {
+   "feel": 3,
+   "takedown": 6,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": false,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Rich Burnout-style HUD: big speed readout, boost bar with %, position, lap, takedown counter, minimap, corner callouts and DRIFT label",
+    "Track has real variety and character: city straight, tunnel, coastal cliff road, orange suspension bridge, desert bends with palms/lamps/rocks",
+    "Rival pack and takedowns work - big 'TAKEDOWN!' card, counter climbs 00 to 03 in 30 s, no civilian traffic"
+   ],
+   "bad": [
+    "Car self-steers and holds the lane with only W held (harness noAutoSteer fail) - it follows the road through bends, so the player is not really driving",
+    "Steering direction unreliable (steerLeftRight fail): holding A ends with the car crashed against the right-side lamp post, and most turn-in phases end in CRASHED",
+    "Flat hazy lighting, unshaded low-poly buildings/rocks and cars with no shadows or textures - the world reads as a stylized mockup, not a Burnout-like place"
+   ],
+   "one_line": "A tidy low-poly racer with a genuinely good Burnout-style HUD, real track variety and working takedowns, but the car drives itself through the bends, so you are a passenger with a boost button."
+  }
+ }
+}

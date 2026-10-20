@@ -1,0 +1,39 @@
+{
+ "plan": "ChatGPT Plus",
+ "plan_usd_month": 20.0,
+ "tokens": {
+  "input": 438425,
+  "cache_read": 33578880,
+  "cache_write": 0,
+  "output": 229960,
+  "reasoning": 163608,
+  "total": 34247265
+ },
+ "measured": {
+  "weekly_pct": 13.0,
+  "five_hour_pct": 86.0,
+  "source": "Codex rate-limit snapshots in its session files (account-wide)",
+  "month_pct": 3.25
+ },
+ "estimated": {
+  "usd": 0.79,
+  "month_pct": 3.94,
+  "usd_per_mtok": 0.022988506,
+  "monthly_tokens": 870000000,
+  "confidence": "high",
+  "data_date": "2026-09-30",
+  "source": "real-api-pricing: ChatGPT Plus x gpt-6.1-sol"
+ },
+ "provider_usd": null,
+ "resumes": 0,
+ "waited_min": 0.0,
+ "exit_reason": "agent_done",
+ "agent_min": 101.8,
+ "wall_min": 120,
+ "usd": 0.65,
+ "usd_kind": "measured",
+ "month_pct": 3.25,
+ "month_pct_kind": "measured",
+ "weekly_pct": 13.0,
+ "summary": "0.65 $ (measured) \u00b7 3.25% of the monthly ChatGPT Plus (measured: 13% of a week) \u00b7 3.94% est. \u00b7 34.2M tokens"
+}

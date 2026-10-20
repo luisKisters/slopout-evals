@@ -1,0 +1,69 @@
+{
+  "checks": {
+    "loads": {
+      "status": "pass",
+      "pass": true,
+      "detail": "canvas 1024x576"
+    },
+    "noConsoleErrors": {
+      "status": "pass",
+      "pass": true,
+      "detail": []
+    },
+    "rendersImage": {
+      "status": "pass",
+      "pass": true,
+      "detail": "mean 114.4 std 51.0"
+    },
+    "gasMovesForward": {
+      "status": "pass",
+      "pass": true,
+      "detail": "energy 10.76 vs idle 7.5, zoom 1.47"
+    },
+    "steerLeftRight": {
+      "status": "fail",
+      "pass": false,
+      "detail": "reversed steering (pixels). camera: yaw rate change none measurable; pixels: left shift 1.27, right shift 3"
+    },
+    "reverse": {
+      "status": "pass",
+      "pass": true,
+      "detail": "zoom -2.86, energy 4.37"
+    },
+    "fps30": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "not measured: software GL on a CPU box (virtual clock, 142 ms CPU per frame)"
+    },
+    "noAutoSteer": {
+      "status": "fail",
+      "pass": false,
+      "detail": "auto-steer or lane keeping: camera: turned up to 41° in 14.4 s of gas only, then end of window"
+    },
+    "boostNoFlicker": {
+      "status": "pass",
+      "pass": true,
+      "detail": "fov 69.0-76.9° with 0 direction changes in 3 s of space on an empty bar"
+    },
+    "shiftDrift": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "camera: slip 1.2° with shift vs 9.1° without; yaw -17.5° vs 25.4°"
+    },
+    "rivalSpawn": {
+      "status": "unknown",
+      "pass": null,
+      "detail": "player car not found (no three.js scene data)"
+    }
+  },
+  "passed": 6,
+  "total": 11,
+  "frameTimeMs": {
+    "p50": 142,
+    "p95": 227,
+    "p99": 270,
+    "samples": 2250,
+    "kind": "cpu ms per frame (software GL, not game fps)"
+  },
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+}

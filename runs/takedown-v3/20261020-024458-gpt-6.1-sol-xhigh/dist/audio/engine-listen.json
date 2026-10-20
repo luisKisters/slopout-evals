@@ -1,0 +1,431 @@
+{
+ "path": "public/audio/engine.wav",
+ "start": null,
+ "end": null,
+ "duration": 8.0,
+ "measurements": {
+  "duration": 8.0,
+  "peak_dbfs": -4.4,
+  "true_peak_dbtp": -4.4,
+  "rms_dbfs": -16.9,
+  "lufs": -16.0,
+  "lra_lu": 0.1,
+  "attack_ms": 25.0,
+  "brightness_hz": 1673,
+  "bandwidth_hz": 12901,
+  "noise_floor_dbfs": -20.0,
+  "flatness": 0.0003,
+  "harmonic_ratio": 0.763,
+  "onset_count": 32,
+  "onsets_per_s": 4.0,
+  "width": "mono",
+  "digital_silence_frac": 0.0001
+ },
+ "shape": "busy, 4.0 onsets/s (attack 25 ms)",
+ "top_tags": [
+  {
+   "term": "a motorcycle revving",
+   "category": "everyday",
+   "z": 3.0,
+   "cosine": 0.239,
+   "verdict": "strong"
+  },
+  {
+   "term": "a car engine starting",
+   "category": "everyday",
+   "z": 2.82,
+   "cosine": 0.243,
+   "verdict": "plausible"
+  },
+  {
+   "term": "a printer printing",
+   "category": "everyday",
+   "z": 2.47,
+   "cosine": 0.209,
+   "verdict": "weak"
+  },
+  {
+   "term": "a helicopter flying overhead",
+   "category": "everyday",
+   "z": 2.33,
+   "cosine": 0.206,
+   "verdict": "weak"
+  },
+  {
+   "term": "a cow mooing",
+   "category": "everyday",
+   "z": 2.25,
+   "cosine": 0.142,
+   "verdict": "weak"
+  },
+  {
+   "term": "a city street with traffic",
+   "category": "ambience",
+   "z": 2.07,
+   "cosine": 0.099,
+   "verdict": "weak"
+  },
+  {
+   "term": "a rooster crowing",
+   "category": "everyday",
+   "z": 2.07,
+   "cosine": 0.176,
+   "verdict": "weak"
+  },
+  {
+   "term": "footsteps on gravel",
+   "category": "foley",
+   "z": 2.02,
+   "cosine": 0.093,
+   "verdict": "weak"
+  }
+ ],
+ "music_hints": [
+  {
+   "term": "a punchy kick drum pattern",
+   "category": "instruments",
+   "z": 2.13,
+   "cosine": 0.135
+  },
+  {
+   "term": "a person breathing",
+   "category": "voice",
+   "z": 1.61,
+   "cosine": 0.111
+  },
+  {
+   "term": "drum and bass music",
+   "category": "music_genre",
+   "z": 1.5,
+   "cosine": 0.133
+  },
+  {
+   "term": "hip hop beat with heavy bass",
+   "category": "music_genre",
+   "z": 1.48,
+   "cosine": 0.128
+  },
+  {
+   "term": "a bass guitar",
+   "category": "instruments",
+   "z": 1.45,
+   "cosine": 0.157
+  },
+  {
+   "term": "people laughing",
+   "category": "voice",
+   "z": 1.42,
+   "cosine": -0.008
+  },
+  {
+   "term": "a man shouting",
+   "category": "voice",
+   "z": 1.33,
+   "cosine": -0.007
+  },
+  {
+   "term": "a deep sub bass",
+   "category": "instruments",
+   "z": 1.14,
+   "cosine": 0.119
+  }
+ ],
+ "tags": {
+  "transitions": [
+   {
+    "term": "a gust of wind rushing past",
+    "z": 0.9,
+    "cosine": 0.082
+   },
+   {
+    "term": "a rising riser building tension",
+    "z": 0.61,
+    "cosine": 0.1
+   },
+   {
+    "term": "a stutter glitch transition",
+    "z": 0.48,
+    "cosine": 0.118
+   }
+  ],
+  "impacts": [
+   {
+    "term": "a kick drum",
+    "z": 1.71,
+    "cosine": 0.128
+   },
+   {
+    "term": "a low rumble",
+    "z": 1.59,
+    "cosine": 0.117
+   },
+   {
+    "term": "a big braam",
+    "z": 1.51,
+    "cosine": 0.156
+   }
+  ],
+  "ui": [
+   {
+    "term": "a scroll wheel tick",
+    "z": 1.46,
+    "cosine": 0.182
+   },
+   {
+    "term": "a typing cursor blip",
+    "z": 1.13,
+    "cosine": 0.143
+   },
+   {
+    "term": "a phone vibration buzz",
+    "z": 1.05,
+    "cosine": 0.081
+   }
+  ],
+  "keyboard": [
+   {
+    "term": "a keyboard typing fast",
+    "z": 0.66,
+    "cosine": 0.097
+   },
+   {
+    "term": "a laptop keyboard typing",
+    "z": 0.36,
+    "cosine": 0.088
+   },
+   {
+    "term": "an enter key press",
+    "z": 0.32,
+    "cosine": 0.122
+   }
+  ],
+  "foley": [
+   {
+    "term": "footsteps on gravel",
+    "z": 2.02,
+    "cosine": 0.093
+   },
+   {
+    "term": "a finger squeaking on glass",
+    "z": 1.49,
+    "cosine": 0.092
+   },
+   {
+    "term": "a metal scrape",
+    "z": 1.31,
+    "cosine": 0.082
+   }
+  ],
+  "water": [
+   {
+    "term": "ice cubes in a glass",
+    "z": 1.17,
+    "cosine": 0.111
+   },
+   {
+    "term": "being underwater",
+    "z": 0.24,
+    "cosine": 0.042
+   },
+   {
+    "term": "a dripping tap",
+    "z": 0.13,
+    "cosine": 0.061
+   }
+  ],
+  "nature": [
+   {
+    "term": "a horse galloping",
+    "z": 1.98,
+    "cosine": 0.154
+   },
+   {
+    "term": "a tree shaking",
+    "z": 1.48,
+    "cosine": 0.146
+   },
+   {
+    "term": "a bird flapping its wings",
+    "z": 1.41,
+    "cosine": 0.099
+   }
+  ],
+  "chimes": [
+   {
+    "term": "a wine glass ring",
+    "z": 0.73,
+    "cosine": 0.049
+   },
+   {
+    "term": "a singing bowl",
+    "z": 0.6,
+    "cosine": 0.018
+   },
+   {
+    "term": "a glass ting",
+    "z": 0.21,
+    "cosine": 0.066
+   }
+  ],
+  "ambience": [
+   {
+    "term": "a city street with traffic",
+    "z": 2.07,
+    "cosine": 0.099
+   },
+   {
+    "term": "a computer fan hum",
+    "z": 1.94,
+    "cosine": 0.138
+   },
+   {
+    "term": "an airplane flying overhead",
+    "z": 1.83,
+    "cosine": 0.142
+   }
+  ],
+  "everyday": [
+   {
+    "term": "a motorcycle revving",
+    "z": 3.0,
+    "cosine": 0.239
+   },
+   {
+    "term": "a car engine starting",
+    "z": 2.82,
+    "cosine": 0.243
+   },
+   {
+    "term": "a printer printing",
+    "z": 2.47,
+    "cosine": 0.209
+   }
+  ],
+  "music_genre": [
+   {
+    "term": "drum and bass music",
+    "z": 1.5,
+    "cosine": 0.133
+   },
+   {
+    "term": "hip hop beat with heavy bass",
+    "z": 1.48,
+    "cosine": 0.128
+   },
+   {
+    "term": "techno music",
+    "z": 1.02,
+    "cosine": 0.123
+   }
+  ],
+  "music_mood": [
+   {
+    "term": "energetic and driving music",
+    "z": 1.11,
+    "cosine": 0.139
+   },
+   {
+    "term": "aggressive music",
+    "z": 0.65,
+    "cosine": 0.1
+   },
+   {
+    "term": "dark and tense music",
+    "z": 0.16,
+    "cosine": 0.083
+   }
+  ],
+  "instruments": [
+   {
+    "term": "a punchy kick drum pattern",
+    "z": 2.13,
+    "cosine": 0.135
+   },
+   {
+    "term": "a bass guitar",
+    "z": 1.45,
+    "cosine": 0.157
+   },
+   {
+    "term": "a deep sub bass",
+    "z": 1.14,
+    "cosine": 0.119
+   }
+  ],
+  "voice": [
+   {
+    "term": "a person breathing",
+    "z": 1.61,
+    "cosine": 0.111
+   },
+   {
+    "term": "people laughing",
+    "z": 1.42,
+    "cosine": -0.008
+   },
+   {
+    "term": "a man shouting",
+    "z": 1.33,
+    "cosine": -0.007
+   }
+  ],
+  "quality": [
+   {
+    "term": "a muffled sound",
+    "z": 1.44,
+    "cosine": 0.066
+   },
+   {
+    "term": "a metallic sound",
+    "z": 1.12,
+    "cosine": 0.067
+   },
+   {
+    "term": "a hollow sound",
+    "z": 1.0,
+    "cosine": 0.1
+   }
+  ],
+  "production": [
+   {
+    "term": "a low bitrate mp3 with artifacts",
+    "z": 1.78,
+    "cosine": 0.193
+   },
+   {
+    "term": "a distorted clipped recording",
+    "z": 1.32,
+    "cosine": 0.11
+   },
+   {
+    "term": "a field recording outdoors",
+    "z": 1.04,
+    "cosine": 0.068
+   }
+  ]
+ },
+ "audioset": [
+  {
+   "label": "Engine",
+   "p": 0.311
+  },
+  {
+   "label": "Vehicle",
+   "p": 0.302
+  },
+  {
+   "label": "Idling",
+   "p": 0.194
+  },
+  {
+   "label": "Medium engine (mid frequency)",
+   "p": 0.171
+  },
+  {
+   "label": "Music",
+   "p": 0.154
+  }
+ ],
+ "character": [],
+ "summary": "8.00 s busy, 4.0 onsets/s (attack 25 ms). Sounds most like: a motorcycle revving (z +3.0), a car engine starting (z +2.8), a printer printing (z +2.4) [clear reading]. Other readings: a city street with traffic (ambience, z +2.0), footsteps on gravel (foley, z +2.0). AudioSet: Engine 0.31, Vehicle 0.30, Idling 0.19. peak -4.4 dBFS, -16.0 LUFS, brightness 1.7 kHz, bandwidth 12.9 kHz, noise floor -20 dBFS, mono."
+}

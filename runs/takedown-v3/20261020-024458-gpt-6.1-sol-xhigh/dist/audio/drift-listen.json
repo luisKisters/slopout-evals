@@ -1,0 +1,430 @@
+{
+ "path": "public/audio/drift.wav",
+ "start": null,
+ "end": null,
+ "duration": 2.707,
+ "measurements": {
+  "duration": 2.707,
+  "peak_dbfs": -6.3,
+  "true_peak_dbtp": -6.3,
+  "rms_dbfs": -20.1,
+  "lufs": -15.0,
+  "attack_ms": 145.0,
+  "brightness_hz": 3658,
+  "bandwidth_hz": 20480,
+  "noise_floor_dbfs": -22.8,
+  "flatness": 0.0007,
+  "harmonic_ratio": 0.514,
+  "onset_count": 12,
+  "onsets_per_s": 4.43,
+  "width": "mono",
+  "digital_silence_frac": 0.0002
+ },
+ "shape": "busy, 4.4 onsets/s (attack 145 ms)",
+ "top_tags": [
+  {
+   "term": "a balloon squeak",
+   "category": "foley",
+   "z": 3.13,
+   "cosine": 0.242,
+   "verdict": "strong"
+  },
+  {
+   "term": "a power drill",
+   "category": "everyday",
+   "z": 2.76,
+   "cosine": 0.195,
+   "verdict": "plausible"
+  },
+  {
+   "term": "a record scratch",
+   "category": "transitions",
+   "z": 2.72,
+   "cosine": 0.25,
+   "verdict": "plausible"
+  },
+  {
+   "term": "a rooster crowing",
+   "category": "everyday",
+   "z": 2.37,
+   "cosine": 0.181,
+   "verdict": "weak"
+  },
+  {
+   "term": "a printer printing",
+   "category": "everyday",
+   "z": 1.92,
+   "cosine": 0.133,
+   "verdict": "no match"
+  },
+  {
+   "term": "a motorcycle revving",
+   "category": "everyday",
+   "z": 1.91,
+   "cosine": 0.122,
+   "verdict": "no match"
+  },
+  {
+   "term": "a phone vibration buzz",
+   "category": "ui",
+   "z": 1.91,
+   "cosine": 0.115,
+   "verdict": "no match"
+  },
+  {
+   "term": "a rubber stretch",
+   "category": "foley",
+   "z": 1.86,
+   "cosine": 0.126,
+   "verdict": "no match"
+  }
+ ],
+ "music_hints": [
+  {
+   "term": "a snare roll",
+   "category": "instruments",
+   "z": 2.55,
+   "cosine": 0.176
+  },
+  {
+   "term": "trap beat",
+   "category": "music_genre",
+   "z": 1.96,
+   "cosine": 0.198
+  },
+  {
+   "term": "a baby crying",
+   "category": "voice",
+   "z": 1.81,
+   "cosine": 0.062
+  },
+  {
+   "term": "a synthesizer lead",
+   "category": "instruments",
+   "z": 1.73,
+   "cosine": 0.167
+  },
+  {
+   "term": "crisp hi-hats",
+   "category": "instruments",
+   "z": 1.53,
+   "cosine": 0.109
+  },
+  {
+   "term": "future bass music",
+   "category": "music_genre",
+   "z": 1.4,
+   "cosine": 0.152
+  },
+  {
+   "term": "children laughing",
+   "category": "voice",
+   "z": 1.33,
+   "cosine": -0.028
+  },
+  {
+   "term": "dubstep music",
+   "category": "music_genre",
+   "z": 1.28,
+   "cosine": 0.105
+  }
+ ],
+ "tags": {
+  "transitions": [
+   {
+    "term": "a record scratch",
+    "z": 2.72,
+    "cosine": 0.25
+   },
+   {
+    "term": "a rising riser building tension",
+    "z": 1.44,
+    "cosine": 0.117
+   },
+   {
+    "term": "a tape stop slowing down",
+    "z": 1.35,
+    "cosine": 0.118
+   }
+  ],
+  "impacts": [
+   {
+    "term": "a big braam",
+    "z": 1.24,
+    "cosine": 0.082
+   },
+   {
+    "term": "a snare hit",
+    "z": 1.03,
+    "cosine": -0.006
+   },
+   {
+    "term": "a kick drum",
+    "z": 0.3,
+    "cosine": -0.065
+   }
+  ],
+  "ui": [
+   {
+    "term": "a phone vibration buzz",
+    "z": 1.91,
+    "cosine": 0.115
+   },
+   {
+    "term": "a camera shutter click",
+    "z": 1.04,
+    "cosine": 0.074
+   },
+   {
+    "term": "an error buzz",
+    "z": 0.95,
+    "cosine": 0.023
+   }
+  ],
+  "keyboard": [
+   {
+    "term": "a keyboard typing fast",
+    "z": 0.67,
+    "cosine": 0.027
+   },
+   {
+    "term": "an old typewriter",
+    "z": 0.45,
+    "cosine": -0.022
+   },
+   {
+    "term": "a laptop keyboard typing",
+    "z": 0.19,
+    "cosine": -0.012
+   }
+  ],
+  "foley": [
+   {
+    "term": "a balloon squeak",
+    "z": 3.13,
+    "cosine": 0.242
+   },
+   {
+    "term": "a rubber stretch",
+    "z": 1.86,
+    "cosine": 0.126
+   },
+   {
+    "term": "a squishy wet squelch",
+    "z": 1.74,
+    "cosine": 0.086
+   }
+  ],
+  "water": [
+   {
+    "term": "ice cubes in a glass",
+    "z": 0.58,
+    "cosine": -0.009
+   },
+   {
+    "term": "being underwater",
+    "z": 0.29,
+    "cosine": -0.037
+   },
+   {
+    "term": "a waterfall",
+    "z": 0.18,
+    "cosine": -0.022
+   }
+  ],
+  "nature": [
+   {
+    "term": "a bee flying by",
+    "z": 1.65,
+    "cosine": 0.092
+   },
+   {
+    "term": "a small animal running through grass",
+    "z": 1.62,
+    "cosine": 0.095
+   },
+   {
+    "term": "insects buzzing",
+    "z": 1.07,
+    "cosine": 0.034
+   }
+  ],
+  "chimes": [
+   {
+    "term": "a sustained glass harp tone",
+    "z": 0.91,
+    "cosine": -0.019
+   },
+   {
+    "term": "a triangle hit",
+    "z": 0.44,
+    "cosine": -0.056
+   },
+   {
+    "term": "a glissando on bar chimes",
+    "z": 0.15,
+    "cosine": -0.021
+   }
+  ],
+  "ambience": [
+   {
+    "term": "birds singing in the morning",
+    "z": 1.43,
+    "cosine": 0.016
+   },
+   {
+    "term": "a crowd cheering",
+    "z": 1.04,
+    "cosine": -0.032
+   },
+   {
+    "term": "skylarks over a meadow",
+    "z": 0.95,
+    "cosine": 0.028
+   }
+  ],
+  "everyday": [
+   {
+    "term": "a power drill",
+    "z": 2.76,
+    "cosine": 0.195
+   },
+   {
+    "term": "a rooster crowing",
+    "z": 2.37,
+    "cosine": 0.181
+   },
+   {
+    "term": "a printer printing",
+    "z": 1.92,
+    "cosine": 0.133
+   }
+  ],
+  "music_genre": [
+   {
+    "term": "trap beat",
+    "z": 1.96,
+    "cosine": 0.198
+   },
+   {
+    "term": "future bass music",
+    "z": 1.4,
+    "cosine": 0.152
+   },
+   {
+    "term": "dubstep music",
+    "z": 1.28,
+    "cosine": 0.105
+   }
+  ],
+  "music_mood": [
+   {
+    "term": "energetic and driving music",
+    "z": 0.62,
+    "cosine": 0.027
+   },
+   {
+    "term": "futuristic music",
+    "z": 0.53,
+    "cosine": 0.052
+   },
+   {
+    "term": "triumphant and heroic music",
+    "z": 0.22,
+    "cosine": -0.029
+   }
+  ],
+  "instruments": [
+   {
+    "term": "a snare roll",
+    "z": 2.55,
+    "cosine": 0.176
+   },
+   {
+    "term": "a synthesizer lead",
+    "z": 1.73,
+    "cosine": 0.167
+   },
+   {
+    "term": "crisp hi-hats",
+    "z": 1.53,
+    "cosine": 0.109
+   }
+  ],
+  "voice": [
+   {
+    "term": "a baby crying",
+    "z": 1.81,
+    "cosine": 0.062
+   },
+   {
+    "term": "children laughing",
+    "z": 1.33,
+    "cosine": -0.028
+   },
+   {
+    "term": "a man shouting",
+    "z": 1.08,
+    "cosine": -0.085
+   }
+  ],
+  "quality": [
+   {
+    "term": "a harsh sound",
+    "z": 1.45,
+    "cosine": 0.095
+   },
+   {
+    "term": "an airy sound",
+    "z": 1.07,
+    "cosine": 0.027
+   },
+   {
+    "term": "a muffled sound",
+    "z": 0.53,
+    "cosine": -0.08
+   }
+  ],
+  "production": [
+   {
+    "term": "a retro video game sound effect",
+    "z": 1.62,
+    "cosine": 0.133
+   },
+   {
+    "term": "a distorted clipped recording",
+    "z": 1.47,
+    "cosine": 0.076
+   },
+   {
+    "term": "white noise",
+    "z": 1.37,
+    "cosine": 0.053
+   }
+  ]
+ },
+ "audioset": [
+  {
+   "label": "Skidding",
+   "p": 0.444
+  },
+  {
+   "label": "Tire squeal",
+   "p": 0.238
+  },
+  {
+   "label": "Car",
+   "p": 0.202
+  },
+  {
+   "label": "Vehicle",
+   "p": 0.201
+  },
+  {
+   "label": "Squeal",
+   "p": 0.11
+  }
+ ],
+ "character": [],
+ "summary": "2.71 s busy, 4.4 onsets/s (attack 145 ms). Sounds most like: a balloon squeak (z +3.1), a power drill (z +2.7), a record scratch (z +2.7) [clear reading]. Other readings: a phone vibration buzz (ui, z +1.9). AudioSet: Skidding 0.44, Tire squeal 0.24, Car 0.20. peak -6.3 dBFS, -15.0 LUFS, brightness 3.7 kHz, bandwidth 20.5 kHz, noise floor -23 dBFS, mono."
+}

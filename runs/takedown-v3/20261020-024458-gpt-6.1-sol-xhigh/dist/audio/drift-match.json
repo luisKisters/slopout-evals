@@ -1,0 +1,167 @@
+{
+ "summary": "drift.wav: 'tires squealing and skidding on asphalt' -> strong (z +3.3; would rank #1 among 322 vocabulary descriptions; cosine 0.22); 'a race car drifting around a corner' -> plausible (z +2.6; would rank #4 among 322 vocabulary descriptions; cosine 0.19). Forced choice vs your alternatives: 'tires squealing and skidding on asphalt' 83%, 'a rooster crowing' 16%, 'white noise' <1%, 'a vacuum cleaner' 1%. It sounds most like: 'a balloon squeak' (z +3.1), 'a power drill' (z +2.7), 'a record scratch' (z +2.7), 'a snare roll' (z +2.5). Evidence for 'strong' (held-out library search, ~3% of candidate pairs true): the right kind of sound 98% of the time, the exact variant 61% (a close variant such as an Enter key for a spacebar counts as wrong then).",
+ "path": "public/audio/drift.wav",
+ "start": null,
+ "end": null,
+ "peak_dbfs": -6.3,
+ "query": "tires squealing and skidding on asphalt",
+ "cosine": 0.223,
+ "z": 3.36,
+ "percentile": 100.0,
+ "rank_in_vocab": 1,
+ "p_vs_alts": 0.83,
+ "verdict": "strong",
+ "validated": true,
+ "alts": [
+  {
+   "query": "a rooster crowing",
+   "p": 0.163,
+   "z": 2.37,
+   "cosine": 0.181
+  },
+  {
+   "query": "white noise",
+   "p": 0.001,
+   "z": 1.37,
+   "cosine": 0.053
+  },
+  {
+   "query": "a vacuum cleaner",
+   "p": 0.006,
+   "z": 1.74,
+   "cosine": 0.095
+  }
+ ],
+ "results": [
+  {
+   "query": "tires squealing and skidding on asphalt",
+   "cosine": 0.223,
+   "z": 3.36,
+   "percentile": 100.0,
+   "rank_in_vocab": 1,
+   "vocab_size": 322,
+   "verdict": "strong",
+   "validated": true,
+   "p_vs_alts": 0.83,
+   "alts": [
+    {
+     "query": "a rooster crowing",
+     "p": 0.163,
+     "z": 2.37,
+     "cosine": 0.181
+    },
+    {
+     "query": "white noise",
+     "p": 0.001,
+     "z": 1.37,
+     "cosine": 0.053
+    },
+    {
+     "query": "a vacuum cleaner",
+     "p": 0.006,
+     "z": 1.74,
+     "cosine": 0.095
+    }
+   ]
+  },
+  {
+   "query": "a race car drifting around a corner",
+   "cosine": 0.194,
+   "z": 2.67,
+   "percentile": 99.1,
+   "rank_in_vocab": 4,
+   "vocab_size": 322,
+   "verdict": "plausible",
+   "validated": true,
+   "p_vs_alts": 0.613,
+   "alts": [
+    {
+     "query": "a rooster crowing",
+     "p": 0.371,
+     "z": 2.37,
+     "cosine": 0.181
+    },
+    {
+     "query": "white noise",
+     "p": 0.003,
+     "z": 1.37,
+     "cosine": 0.053
+    },
+    {
+     "query": "a vacuum cleaner",
+     "p": 0.013,
+     "z": 1.74,
+     "cosine": 0.095
+    }
+   ]
+  }
+ ],
+ "closest_vocab": [
+  {
+   "term": "a balloon squeak",
+   "category": "foley",
+   "z": 3.13,
+   "cosine": 0.242
+  },
+  {
+   "term": "a power drill",
+   "category": "everyday",
+   "z": 2.76,
+   "cosine": 0.195
+  },
+  {
+   "term": "a record scratch",
+   "category": "transitions",
+   "z": 2.72,
+   "cosine": 0.25
+  },
+  {
+   "term": "a snare roll",
+   "category": "instruments",
+   "z": 2.55,
+   "cosine": 0.176
+  }
+ ],
+ "verdict_thresholds_z": {
+  "strong": 3.0,
+  "plausible": 2.5,
+  "weak": 2.0
+ },
+ "verdict_evidence": {
+  "strong": {
+   "z": ">= 3",
+   "lr": 1289,
+   "precision_library": 0.98,
+   "precision_even_odds": 1.0,
+   "lr_strict": 51,
+   "precision_library_strict": 0.61,
+   "recall_at_or_above": 0.51
+  },
+  "plausible": {
+   "z": "2.5 - 3",
+   "lr": 21,
+   "precision_library": 0.41,
+   "precision_even_odds": 0.95,
+   "lr_strict": 9.1,
+   "precision_library_strict": 0.22,
+   "recall_at_or_above": 0.63
+  },
+  "weak": {
+   "z": "2 - 2.5",
+   "lr": 12,
+   "precision_library": 0.28,
+   "precision_even_odds": 0.92,
+   "lr_strict": 6.6,
+   "precision_library_strict": 0.17,
+   "recall_at_or_above": 0.76
+  },
+  "no match": {
+   "z": "< 2",
+   "lr": 0.25,
+   "precision_library": 0.008,
+   "precision_even_odds": 0.2,
+   "lr_strict": 0.25,
+   "precision_library_strict": 0.008
+  }
+ }
+}

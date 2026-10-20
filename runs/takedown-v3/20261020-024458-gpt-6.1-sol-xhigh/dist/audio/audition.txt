@@ -1,0 +1,4 @@
+   0.000  hit            impact/metal               hit_1.wav
+   2.300  whoosh.long    whoosh_big/jet             whoosh-long_1.wav
+   5.049  bell           logo_sting/spark           bell_1.wav
+   7.989  whoosh.short   whoosh_fast/tight          whoosh-short_1.wav
