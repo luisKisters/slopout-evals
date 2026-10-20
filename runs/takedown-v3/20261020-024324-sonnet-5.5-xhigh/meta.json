@@ -1,0 +1,39 @@
+{
+ "run": "20261020-024324-sonnet-5.5-xhigh",
+ "task": "takedown-v3",
+ "contestant": "sonnet-5.5-xhigh",
+ "harness": "claude",
+ "model": "claude-sonnet-5-5",
+ "effort": "xhigh",
+ "wall_min": 120,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v3",
+ "box": "sl-sonnet-5-5-xhigh-1020044127",
+ "started": "2026-10-20T02:43:24Z",
+ "seconds": 6896,
+ "elapsed_seconds": 6897,
+ "exit": "0",
+ "timed_out": false,
+ "waited_seconds": 0,
+ "waited_min": 0.0,
+ "resumes": 0,
+ "exit_reason": "agent_done",
+ "segments": [
+  {
+   "segment": 0,
+   "start": 1792464205,
+   "end": 1792471101,
+   "secs": 6896,
+   "exit": "0",
+   "limit": {
+    "limited": false,
+    "reset": null,
+    "kind": "",
+    "message": ""
+   },
+   "waited_secs": 0
+  }
+ ],
+ "finished": "2026-10-20T04:38:28Z"
+}

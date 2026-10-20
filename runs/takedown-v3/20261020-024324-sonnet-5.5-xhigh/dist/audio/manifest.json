@@ -1,0 +1,98 @@
+[
+  {
+    "file": "crash.wav",
+    "duration": 1.2,
+    "kind": "oneshot",
+    "note": "Heavy car crash: low thud + crunching metal + shattering glass."
+  },
+  {
+    "file": "takedown.wav",
+    "duration": 1.1,
+    "kind": "oneshot",
+    "note": "Takedown reward: punchy metallic hit, rising zap and bright chime arpeggio."
+  },
+  {
+    "file": "boost.wav",
+    "duration": 1.0,
+    "kind": "oneshot",
+    "note": "Boost ignition: nitrous kick plus rising whoosh."
+  },
+  {
+    "file": "scrape.wav",
+    "duration": 0.45,
+    "kind": "oneshot",
+    "note": "Side scrape on concrete wall; gritty grind + screech. Short fades, safe to retrigger."
+  },
+  {
+    "file": "bump.wav",
+    "duration": 0.3,
+    "kind": "oneshot",
+    "note": "Car-to-car bump: dull metallic thud with a little crunch."
+  },
+  {
+    "file": "nearmiss.wav",
+    "duration": 0.5,
+    "kind": "oneshot",
+    "note": "Near miss: doppler-like fast pass-by whoosh."
+  },
+  {
+    "file": "land.wav",
+    "duration": 0.4,
+    "kind": "oneshot",
+    "note": "Landing from a jump: suspension thump with metal clank."
+  },
+  {
+    "file": "beep.wav",
+    "duration": 0.18,
+    "kind": "oneshot",
+    "note": "Race start countdown beep, 880 Hz."
+  },
+  {
+    "file": "go.wav",
+    "duration": 0.6,
+    "kind": "oneshot",
+    "note": "Race start GO tone, 1320 Hz, bright with decay."
+  },
+  {
+    "file": "lap.wav",
+    "duration": 0.6,
+    "kind": "oneshot",
+    "note": "Lap complete: two quick rising chime notes."
+  },
+  {
+    "file": "finish.wav",
+    "duration": 1.8,
+    "kind": "oneshot",
+    "note": "Race finish: short triumphant synth arpeggio and chord."
+  },
+  {
+    "file": "rank.wav",
+    "duration": 0.25,
+    "kind": "oneshot",
+    "note": "Passed-a-car blip: short rising two-tone."
+  },
+  {
+    "file": "engine_loop.wav",
+    "duration": 1.0,
+    "kind": "loop",
+    "note": "Engine at medium RPM; exactly 110 firing cycles in 1.000 s (110 Hz). Use playbackRate 0.5-3."
+  },
+  {
+    "file": "skid_loop.wav",
+    "duration": 1.5,
+    "kind": "loop",
+    "note": "Tyre squeal: wobbling harmonic screech + rubbery band noise; seamless."
+  },
+  {
+    "file": "wind_loop.wav",
+    "duration": 2.0,
+    "kind": "loop",
+    "note": "Smooth wind/air rush, 200 Hz-4 kHz noise; seamless."
+  },
+  {
+    "file": "boost_loop.wav",
+    "duration": 1.0,
+    "kind": "loop",
+    "note": "Sustained afterburner/turbo rush with low rumble; seamless."
+  }
+]
