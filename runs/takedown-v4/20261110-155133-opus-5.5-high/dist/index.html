@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BURNOUT MINI</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #000; font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif; }
+  canvas { display: block; }
+  #hud { position: fixed; inset: 0; pointer-events: none; color: #fff; text-shadow: 0 2px 0 #000, 0 0 12px rgba(0,0,0,.6); font-style: italic; }
+  .tl { position: absolute; left: 28px; top: 18px; }
+  .tr { position: absolute; right: 28px; top: 18px; text-align: right; }
+  .br { position: absolute; right: 30px; bottom: 22px; text-align: right; }
+  .bl { position: absolute; left: 28px; bottom: 26px; }
+  #pos { font-size: 74px; line-height: 1; letter-spacing: -2px; }
+  #pos small { font-size: 32px; } #pos .of { font-size: 28px; opacity: .8; }
+  .lbl { font-size: 15px; letter-spacing: 3px; opacity: .85; color: #ffcf3a; }
+  #lap { font-size: 46px; line-height: 1; }
+  #tdn { font-size: 30px; margin-top: 8px; }
+  #spd { font-size: 84px; line-height: .9; letter-spacing: -3px; }
+  #spd small { font-size: 22px; letter-spacing: 1px; }
+  #boostwrap { width: 380px; height: 26px; border: 3px solid #fff; transform: skewX(-20deg); background: rgba(0,0,0,.45); box-shadow: 0 0 10px rgba(0,0,0,.6); overflow: hidden; }
+  #boostbar { height: 100%; width: 0%; background: linear-gradient(90deg, #ff2a00, #ff8a00 50%, #ffe24a); }
+  #boostwrap.on { border-color: #7ff; box-shadow: 0 0 20px #3cf; }
+  #boostwrap.on #boostbar { background: linear-gradient(90deg, #0af, #6ff 60%, #fff); }
+  #center { position: absolute; left: 0; right: 0; top: 30%; text-align: center; }
+  #msg { font-size: 72px; color: #ffe24a; opacity: 0; transition: opacity .2s; }
+  #card { position: absolute; left: 50%; top: 22%; transform: translate(-50%, 0) skewX(-12deg); opacity: 0; }
+  #card .t { font-size: 92px; color: #fff; background: linear-gradient(90deg, #d40000, #ff5a00); padding: 6px 40px; border: 5px solid #fff; box-shadow: 0 0 40px rgba(255,80,0,.8); letter-spacing: 2px; }
+  #card .s { font-size: 24px; text-align: center; margin-top: 6px; color: #ffe24a; }
+  #card.show { animation: card 1.5s ease-out forwards; }
+  @keyframes card {
+    0% { opacity: 0; transform: translate(-50%, 0) skewX(-12deg) scale(3) rotate(-8deg); }
+    12% { opacity: 1; transform: translate(-50%, 0) skewX(-12deg) scale(.9) rotate(2deg); }
+    20% { transform: translate(-50%, 0) skewX(-12deg) scale(1.08) rotate(0deg); }
+    28% { transform: translate(-50%, 0) skewX(-12deg) scale(1); }
+    80% { opacity: 1; transform: translate(-50%, 0) skewX(-12deg) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -40px) skewX(-12deg) scale(1.1); }
+  }
+  #pop { position: absolute; left: 0; right: 0; top: 58%; text-align: center; font-size: 34px; color: #7ff; opacity: 0; }
+  #pop.show { animation: pop .9s ease-out forwards; }
+  @keyframes pop { 0% { opacity: 0; transform: scale(1.6);} 20% { opacity: 1; transform: scale(1);} 100% { opacity: 0; transform: translateY(-30px);} }
+  #result { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; flex-direction: column; background: rgba(0,0,0,.45); font-style: italic; }
+  #result .big { font-size: 110px; color: #ffe24a; }
+  #result .sub { font-size: 30px; margin: 8px; }
+  #result .r { font-size: 28px; margin-top: 26px; animation: blink 1s infinite; }
+  @keyframes blink { 50% { opacity: .35; } }
+  #flash { position: fixed; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+  #wrong { position: absolute; left: 0; right: 0; top: 16%; text-align: center; font-size: 40px; color: #f44; display: none; }
+</style>
+  <script type="module" crossorigin src="./assets/index-C3Fpe6MZ.js"></script>
+</head>
+<body>
+<div id="hud">
+  <div class="tl"><div class="lbl">POSITION</div><div id="pos">1<small>st</small><span class="of"> / 8</span></div></div>
+  <div class="tr"><div class="lbl">LAP</div><div id="lap">1/3</div><div class="lbl" style="margin-top:10px">TAKEDOWNS</div><div id="tdn">0</div></div>
+  <div class="bl"><div class="lbl" style="margin-bottom:6px">BOOST <span style="opacity:.7">[SPACE]</span></div><div id="boostwrap"><div id="boostbar"></div></div></div>
+  <div class="br"><div id="spd">0<small> KM/H</small></div></div>
+  <div id="center"><div id="msg"></div></div>
+  <div id="wrong">WRONG WAY</div>
+  <div id="card"><div class="t">TAKEDOWN!</div><div class="s">+ BOOST</div></div>
+  <div id="pop"></div>
+  <div id="result"><div class="big" id="rbig">1ST</div><div class="sub" id="rsub"></div><div class="r">PRESS R TO RESTART</div></div>
+</div>
+<div id="flash"></div>
+</body>
+</html>

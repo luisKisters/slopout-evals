@@ -1,0 +1,101 @@
+{
+ "contestant": "opus-5.5-high",
+ "run": "20261110-155133-opus-5.5-high",
+ "working": false,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true,
+  "noAutoSteer": false,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "pass",
+  "reverse": "pass",
+  "fps30": "unknown",
+  "noAutoSteer": "fail",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "pass",
+  "rivalSpawn": "unknown"
+ },
+ "parts": {
+  "feel": 5.5,
+  "takedown": 6.5,
+  "looks": 6.0,
+  "hud": 7.5,
+  "trailer": 7.5
+ },
+ "raw": 6.3,
+ "score": 3.0,
+ "judges": [
+  "opus-5.5-xhigh",
+  "sonnet-5.5-xhigh"
+ ],
+ "votes": {
+  "opus-5.5-xhigh": {
+   "feel": 6,
+   "takedown": 7,
+   "looks": 6,
+   "hud": 8,
+   "trailer": 8,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong speed cues: speed lines, blur and an FOV kick on boost up to 280 km/h",
+    "Bold animated TAKEDOWN! card and NEAR MISS + BOOST pops, with a full Burnout-style HUD",
+    "Varied track: a night-lit city canyon and a coastal cliff stretch with bends"
+   ],
+   "bad": [
+    "Holding only gas scrapes the wall through bends for a long time, and the car often flies off the road into water or sand and crashes",
+    "Free play sits stuck in 8th, so the rivals pull away fast once you make mistakes",
+    "Low-poly blocky art, with a dark slab cliff and flat sand that look unfinished"
+   ],
+   "one_line": "It feels fast and the takedowns pop like Burnout, but the car keeps grinding the barriers and falling off the cliff road."
+  },
+  "sonnet-5.5-xhigh": {
+   "feel": 5,
+   "takedown": 6,
+   "looks": 6,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong sense of speed: blur, speed lines and a city canyon with lit windows",
+    "Clear Burnout-style HUD with a boost bar that turns cyan and a big TAKEDOWN! card",
+    "Drift smoke and skid marks, and a scenic sunset coastline with hills and trees"
+   ],
+   "bad": [
+    "Holding only W has the car riding the wall through the bends, and crashes into the water are common and look odd",
+    "Low-poly box cars and flat terrain make it look cheap, and the player drops to 8th and stays there",
+    "The takedown only shows in the trailer, and the crash view of the car upside-down on the water looks broken"
+   ],
+   "one_line": "It looks good at speed with the city and sunset and a punchy takedown card, but it is rough to drive: I scrape the wall, fall into the water, and the cars look blocky."
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "plan": "Claude Max 5x",
+ "plan_usd_month": 100.0,
+ "tokens": {
+  "input": 98,
+  "cache_read": 4010899,
+  "cache_write": 116409,
+  "output": 84932,
+  "reasoning": 28323,
+  "total": 4212338
+ },
+ "measured": {
+  "weekly_pct": 2.0,
+  "five_hour_pct": -36.0,
+  "source": "Claude usage endpoint before/after the run (account-wide)",
+  "month_pct": 0.5
+ },
+ "estimated": {
+  "usd": 0.02,
+  "month_pct": 0.02,
+  "usd_per_mtok": 0.0054543471,
+  "monthly_tokens": 18334000000,
+  "confidence": "medium",
+  "data_date": "2026-09-29~2026-10-03",
+  "source": "real-api-pricing: Claude Max 5x (9/14+) x claude-opus-5.5"
+ },
+ "provider_usd": 3.61,
+ "resumes": 0,
+ "waited_min": 0.0,
+ "exit_reason": "agent_done",
+ "agent_min": 19.8,
+ "wall_min": 60,
+ "usd": 0.5,
+ "usd_kind": "measured",
+ "month_pct": 0.5,
+ "month_pct_kind": "measured",
+ "weekly_pct": 2.0,
+ "summary": "0.50 $ (measured) \u00b7 0.5% of the monthly Claude Max 5x (measured: 2% of a week) \u00b7 0.02% est. \u00b7 4.2M tokens"
+}
