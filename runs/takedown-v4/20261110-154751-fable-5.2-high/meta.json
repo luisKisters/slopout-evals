@@ -1,0 +1,39 @@
+{
+ "run": "20261110-154751-fable-5.2-high",
+ "task": "takedown-v4",
+ "contestant": "fable-5.2-high",
+ "harness": "claude",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "wall_min": 60,
+ "resumed_from": "",
+ "prior_min": 0,
+ "image": "slopout-box:v4",
+ "box": "sl-fable-5-2-high-1110164401",
+ "started": "2026-11-10T15:47:51Z",
+ "seconds": 2707,
+ "elapsed_seconds": 2707,
+ "exit": "0",
+ "timed_out": false,
+ "waited_seconds": 0,
+ "waited_min": 0.0,
+ "resumes": 0,
+ "exit_reason": "agent_done",
+ "segments": [
+  {
+   "segment": 0,
+   "start": 1794325673,
+   "end": 1794328380,
+   "secs": 2707,
+   "exit": "0",
+   "limit": {
+    "limited": false,
+    "reset": null,
+    "kind": "",
+    "message": ""
+   },
+   "waited_secs": 0
+  }
+ ],
+ "finished": "2026-11-10T16:33:04Z"
+}

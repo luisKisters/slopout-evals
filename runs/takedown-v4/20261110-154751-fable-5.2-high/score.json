@@ -1,0 +1,101 @@
+{
+ "contestant": "fable-5.2-high",
+ "run": "20261110-154751-fable-5.2-high",
+ "working": true,
+ "hard": {
+  "builds": true,
+  "loads": true,
+  "noConsoleErrors": true,
+  "rendersImage": true,
+  "fps30": true,
+  "forward": true,
+  "reverse": true,
+  "leftRight": true,
+  "noAutoSteer": true,
+  "boostNoFlicker": true,
+  "shiftDrift": true,
+  "rivalSpawn": true
+ },
+ "check_status": {
+  "loads": "pass",
+  "noConsoleErrors": "pass",
+  "rendersImage": "pass",
+  "gasMovesForward": "pass",
+  "steerLeftRight": "pass",
+  "reverse": "pass",
+  "fps30": "unknown",
+  "noAutoSteer": "unknown",
+  "boostNoFlicker": "pass",
+  "shiftDrift": "pass",
+  "rivalSpawn": "unknown"
+ },
+ "parts": {
+  "feel": 6.0,
+  "takedown": 5.0,
+  "looks": 6.0,
+  "hud": 6.5,
+  "trailer": 7.0
+ },
+ "raw": 6.0,
+ "score": 6.0,
+ "judges": [
+  "opus-5.5-xhigh",
+  "sonnet-5.5-xhigh"
+ ],
+ "votes": {
+  "opus-5.5-xhigh": {
+   "feel": 6,
+   "takedown": 5,
+   "looks": 6,
+   "hud": 7,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": null,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong speed sense: boost has blur, speed lines and FOV kick, and reaches 300+ km/h",
+    "Varied track with a city canyon, a palm and hill section and a long lit tunnel",
+    "Clean Burnout-style HUD showing position, lap and time, takedowns, a two-colour boost bar and big speed numbers"
+   ],
+   "bad": [
+    "Walls are not forgiving: the scripted drive gets CRASHED again and again from side and wall scrapes, especially in the tunnel",
+    "The S phase never clearly shows the car reversing; speed stays at about 44-58",
+    "Takedowns show only a small 'wrecked +boost' text; neither video shows a big takedown card or slow motion"
+   ],
+   "one_line": "It looks fast and the boost really hits, but you crash on almost every wall scrape and the takedowns feel weak."
+  },
+  "sonnet-5.5-xhigh": {
+   "feel": 6,
+   "takedown": 5,
+   "looks": 6,
+   "hud": 6,
+   "trailer": 7,
+   "controls": {
+    "forward": true,
+    "reverse": true,
+    "left": true,
+    "right": true
+   },
+   "rival_visible": true,
+   "curves_visible": true,
+   "only_two_cars": true,
+   "good": [
+    "Strong speed sense: boost blur, speed lines, FOV push and a tunnel at 300 km/h",
+    "Drift smoke and skid marks work. Takedown and near-miss text appear in the trailer.",
+    "The city, hills and tunnel give the track variety, and the Burnout-style HUD is clear."
+   ],
+   "bad": [
+    "The scripted drive crashes and walls out constantly, so the road is hard to hold.",
+    "The scenery is low-poly and flat, and the blocky car is generic.",
+    "The takedown card is hard to read in the footage, and rivals are rarely visible during play."
+   ],
+   "one_line": "It looks and sounds fast with a good boost and tunnel, but it crashes too easily and feels more like a rough prototype than Burnout 3."
+  }
+ }
+}

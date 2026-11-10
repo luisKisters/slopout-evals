@@ -1,0 +1,31 @@
+{
+ "plan": "Claude Max 5x",
+ "plan_usd_month": 100.0,
+ "tokens": {
+  "input": 134,
+  "cache_read": 5453205,
+  "cache_write": 215047,
+  "output": 137505,
+  "reasoning": 58213,
+  "total": 5805891
+ },
+ "measured": {
+  "weekly_pct": 5.0,
+  "five_hour_pct": -15.0,
+  "source": "Claude usage endpoint before/after the run (account-wide)",
+  "month_pct": 1.25
+ },
+ "estimated": null,
+ "provider_usd": 2.98,
+ "resumes": 0,
+ "waited_min": 0.0,
+ "exit_reason": "agent_done",
+ "agent_min": 45.1,
+ "wall_min": 60,
+ "usd": 1.25,
+ "usd_kind": "measured",
+ "month_pct": 1.25,
+ "month_pct_kind": "measured",
+ "weekly_pct": 5.0,
+ "summary": "1.25 $ (measured) \u00b7 1.25% of the monthly Claude Max 5x (measured: 5% of a week) \u00b7 5.8M tokens"
+}
